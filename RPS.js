@@ -1,5 +1,6 @@
-let computerChoices = ['Rock', 'Paper','Scissors']
+let choices = ['Rock', 'Paper','Scissors'];
 
-function getComputerChoice (computerChoices) {
-    return computerChoices [Math.floor.math.random() * computerChoices.lenth]
-}
+function getComputerChoice () {
+    let computerChoice = choice [Math.floor (Math.random ()*  choices.lenth)]
+    return computerChoice;
+};
