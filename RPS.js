@@ -6,7 +6,7 @@ function getComputerChoice () {
 };
 
 
-let playerChoice = prompt("Please choose Rock, Paper, or Scissors.");toLowerCase();
+let playerChoice = prompt("Please choose Rock, Paper, or Scissors.";
 
 
 function playRound (playerChoice, computerChoice) {
