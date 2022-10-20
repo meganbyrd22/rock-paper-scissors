@@ -10,15 +10,17 @@ function playerChoice() {
     return playerChoice;
 }
 
-function playRound (playerChoice, computerChoice) {
+function playRound(playerChoice, computerChoice) {
+    console.log(playerChoice);
+    console.log(computerChoice);
     if playerChoice === computerChoice {
         return "Tie!"
     else if playerChoice==='Rock' && computerChoice==='Scissor' ||
     playerChoice==='Paper' && computerChoice==='Rock' ||
     playerChoice==='Scissor' && computerChoice==='Paper'{
-        return 'You win!'}
+        return 'You win!';}
     else{ 
-        return 'You lose!'
+        return 'You lose!';
     }
     }
     }
