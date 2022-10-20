@@ -5,7 +5,7 @@ function getComputerChoice () {
     return computerChoice;
 };
 
-function playerChoice() {
+function getPlayerChoice() {
     let playerChoice = prompt('Please choose rock, paper, or scissor.').toLowerCase();
     return playerChoice;
 }
