@@ -51,6 +51,7 @@ for (let i = 0; i < 5; i++ ){
         }  
     function updateScore
     (roundWinner){
-        if (roundWinner='player')
+        if (roundWinner='player') playerScore=+1;
+        else (computerScore+1)
     }
 }
