@@ -30,8 +30,7 @@ for (let i = 0; i < 5; i++ ){
     function playRound(playerChoice, computerChoice) {
         playerChoice = prompt("Please choose Rock, Paper, or Scissors.");
         if (playerChoice === computerChoice) {
-            playerScore++
-            roundWinner='player'}
+            roundWinner='tie'}
     
         else if (playerChoice==='Rock' && computerChoice ==='Scissor') {
             playerScore++
