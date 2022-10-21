@@ -9,9 +9,14 @@ function playRound(playerChoice, computerChoice) {
     playerChoice = prompt("Please choose Rock, Paper, or Scissors.");
     if (playerChoice === computerChoice) {
         return "Tie!";}
-    if (playerChoice==='Rock' && computerChoice ==='Scissor') ||
-    (playerChoice ==='Paper' && computerChoice ==='Rock') ||
-    (playerChoice ==='Scissor' && computerChoice ==='Paper')
+        
+    else if (playerChoice==='Rock' && computerChoice ==='Scissor') {
+    return "You win!"}
+
+    else if (playerChoice ==='Paper' && computerChoice ==='Rock') {
+        return "You win!"}
+    
+    else if (playerChoice ==='Scissor' && computerChoice ==='Paper'){
         return "You win!";}
     else{ 
         return "You lose!";
