@@ -24,6 +24,9 @@ function playRound(playerChoice, computerChoice) {
     }
 
 for (let i = 0; i < 5; i++ ){
+    let playerScore=0
+    let computerScore=0
+    let roundWinner=''
     function playRound(playerChoice, computerChoice) {
         playerChoice = prompt("Please choose Rock, Paper, or Scissors.");
         if (playerChoice === computerChoice) {
