@@ -54,5 +54,5 @@ for (let i = 0; i < 5; i++ ){
         if (roundWinner='player') playerScore=+1;
         else (computerScore+1)
     }
-    showScore.textContent = 'Player: ${playerScore}' && 'Computer:${computerScore}';
+    showScore = 'Player: ${playerScore}' && 'Computer:${computerScore}';
 }
