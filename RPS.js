@@ -27,18 +27,23 @@ for (let i = 0; i < 5; i++ ){
     function playRound(playerChoice, computerChoice) {
         playerChoice = prompt("Please choose Rock, Paper, or Scissors.");
         if (playerChoice === computerChoice) {
-            return "Tie!";}
+            playerScore++
+            roundWinner='player'}
     
         else if (playerChoice==='Rock' && computerChoice ==='Scissor') {
-        return "You win!"}
+            playerScore++
+            roundWinner='player'}
     
         else if (playerChoice ==='Paper' && computerChoice ==='Rock') {
-            return "You win!"}
+            playerScore++
+            roundWinner='player'}
         
         else if (playerChoice ==='Scissor' && computerChoice ==='Paper'){
-            return "You win!";}
+            playerScore++
+            roundWinner='player';}
         else{ 
-            return "You lose!";
+            computerScore++
+            roundWinner='computer';
         }
         }   
 }
