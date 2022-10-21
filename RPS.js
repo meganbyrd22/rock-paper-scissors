@@ -33,18 +33,14 @@ for (let i = 0; i < 5; i++ ){
             roundWinner='tie'}
     
         else if (playerChoice==='Rock' && computerChoice ==='Scissor') {
-            playerScore++
             roundWinner='player'}
     
         else if (playerChoice ==='Paper' && computerChoice ==='Rock') {
-            playerScore++
             roundWinner='player'}
         
         else if (playerChoice ==='Scissor' && computerChoice ==='Paper'){
-            playerScore++
             roundWinner='player';}
         else{ 
-            computerScore++
             roundWinner='computer';
         }
         updateScore(playerScore || computerScore)
