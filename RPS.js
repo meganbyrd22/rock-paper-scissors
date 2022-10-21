@@ -6,12 +6,11 @@ function getComputerChoice () {
 };
 
 
-let playerChoice = prompt("Please choose Rock, Paper, or Scissors.";
 
 
 function playRound (playerChoice, computerChoice) {
-    console.log(playerChoice);
-    console.log(computerChoice);
+    let playerChoice = prompt("Please choose Rock, Paper, or Scissors.");
+
     if playerChoice === computerChoice {
         return "Tie!";}
     else if playerChoice==='Rock' && computerChoice==='Scissor' ||
