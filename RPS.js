@@ -47,6 +47,10 @@ for (let i = 0; i < 5; i++ ){
             computerScore++
             roundWinner='computer';
         }
-        updateScoreMessage(roundWinner, playerChoice, computerChoice)
-        }   
+        updateScore(playerScore || computerScore)
+        }  
+    function updateScore
+    (roundWinner){
+        if (roundWinner='player')
+    }
 }
