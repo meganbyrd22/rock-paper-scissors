@@ -51,6 +51,4 @@ for (let i = 0; i < 5; i++ ){
     let showComputerScorePara=document.getElementById('playerScore')
     let showPlayerScorePara=document.getElementById('computerScore')
 
-   showPlayerScorePara.textcontent='Player: ${playerScore}'
-   showComputerScorePara.textcontent= 'Computer:${computerScore}';
 }
