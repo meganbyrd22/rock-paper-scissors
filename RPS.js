@@ -48,6 +48,8 @@ for (let i = 0; i < 5; i++ ){
     function updateScore(){
         if (roundWinner='player'){ (playerScore)++}
         else ((computerScore)++)}
+    let showComputerScorePara=document.getElementById('playerScore')
+    let showPlayerScorePara=document.getElementById('computerScore')
 
    showPlayerScorePara.textcontent='Player: ${playerScore}'
    showComputerScorePara.textcontent= 'Computer:${computerScore}';
