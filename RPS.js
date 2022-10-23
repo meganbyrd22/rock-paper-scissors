@@ -49,6 +49,6 @@ for (let i = 0; i < 5; i++ ){
         if (roundWinner='player'){ (playerScore)++}
         else ((computerScore)++)}
 
-   function showScore() {if roundWinner='player' || roundWinner='computer'
-   return 'Player: ${playerScore}' && 'Computer:${computerScore}'};
+   showPlayerScorePara.textcontent='Player: ${playerScore}'
+   showComputerScorePara.textcontent= 'Computer:${computerScore}';
 }
