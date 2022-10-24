@@ -1,13 +1,16 @@
 let choices = ['Rock', 'Paper','Scissors'];
 
-function getComputerChoice () {
-    let computerChoice = choice [Math.floor (Math.random ()*  choices.lenth)]
-    return computerChoice;
+
 
 for (let i = 0; i < 5; i++ ){
     let playerScore=0
     let computerScore=0
     let roundWinner=''
+
+    function getComputerChoice () {
+        let computerChoice = choice [Math.floor (Math.random ()*  choices.lenth)]
+        return computerChoice;
+
     function playRound(playerChoice, computerChoice) {
         playerChoice = prompt("Please choose Rock, Paper, or Scissors.");
         if (playerChoice === computerChoice) {
