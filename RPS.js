@@ -1,10 +1,8 @@
-
-
 for (let i = 0; i < 5; i++ ){
     let playerScore=0
     let computerScore=0
     let roundWinner=''
-
+function game(){playRound}
     function getComputerChoice () {
         let computerChoice = choice [Math.floor (Math.random ()*  choices.lenth)]
         return computerChoice;
