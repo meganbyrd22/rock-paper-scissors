@@ -2,7 +2,7 @@ for (let i = 0; i < 5; i++ ){
     let playerScore=0
     let computerScore=0
     let roundWinner=''
-    let choices='Rock, Paper, Scissors'
+    let choices=["Rock", "Paper", "Scissors"]
 
     function getComputerChoice () {
         let computerChoice = choices [Math.floor (Math.random ()*  choices.length)]
