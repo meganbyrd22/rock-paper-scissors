@@ -43,10 +43,7 @@ for (let i = 0; i < 5; i++ ){
         else{ 
             roundWinner='computer';
         }
-        updateScore(playerScore || computerScore)
         }  
-
-       
 
     function updateScore(){
         if (roundWinner ==='player'){ (playerScore)++}
