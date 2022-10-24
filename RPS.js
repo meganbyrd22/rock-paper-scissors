@@ -20,7 +20,7 @@ for (let i = 0; i < 5; i++ ){
         else{ 
             roundWinner='computer';
         }
-    getComputerChoice () 
+    function getComputerChoice(){
             let computerChoice = choices [Math.floor (Math.random ()*  choices.length)]
             return computerChoice;
     
@@ -29,4 +29,3 @@ for (let i = 0; i < 5; i++ ){
     else (){return'Tie! No one scores'}
 
     console.log('Player: ${playerScore}','Computer: ${computerScore}')
-    }
