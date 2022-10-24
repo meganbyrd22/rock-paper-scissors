@@ -20,10 +20,9 @@ for (let i = 0; i < 5; i++ ){
         else{ 
             roundWinner='computer';
         }
-    function getComputerChoice () {
+    getComputerChoice () 
             let computerChoice = choices [Math.floor (Math.random ()*  choices.length)]
             return computerChoice;
-        }
     
     function game(playRound){if  (roundWinner ==='player'){ (playerScore)++}
     else if (roundWinner==='computer'){(computerScore)++}
