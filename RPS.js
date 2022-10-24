@@ -3,9 +3,7 @@ for (let i = 0; i < 5; i++ ){
     let computerScore=0
     let roundWinner=''
     let choices=("Rock", "Paper", "Scissors")
-
-    
-        
+   
     function playRound           (playerChoice, computerChoice) {playerChoice = prompt("Please choose Rock, Paper, or Scissors.");
         if (playerChoice === computerChoice) {roundWinner='tie'}
     
@@ -26,6 +24,6 @@ for (let i = 0; i < 5; i++ ){
     
     function game(playRound){if  (roundWinner ==='player'){ (playerScore)++}
     else if (roundWinner==='computer'){(computerScore)++}
-    else (){return'Tie! No one scores'}
+    else ()=>{return'Tie! No one scores'}
 
     console.log('Player: ${playerScore}','Computer: ${computerScore}')
