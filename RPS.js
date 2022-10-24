@@ -4,7 +4,7 @@ for (let i = 0; i < 5; i++ ){
     let roundWinner=''
     let choices=("Rock", "Paper", "Scissors")
    
-    function playRound           (playerChoice, computerChoice) {;
+    function playRound           (playerChoice, computerChoice) {let playerChoice = prompt("Please choose Rock, Paper, or Scissors.");
         if (playerChoice === computerChoice) {roundWinner='tie'}
     
         else if (playerChoice==='Rock' && computerChoice ==='Scissor') {
@@ -23,7 +23,7 @@ for (let i = 0; i < 5; i++ ){
             let computerChoice = choices [Math.floor (Math.random ()*  choices.length)]
             return computerChoice;}
 
-    let playerChoice = prompt("Please choose Rock, Paper, or Scissors.")
+    
 
     function game()
     {if  (roundWinner ==='player'){ (playerScore)++}
