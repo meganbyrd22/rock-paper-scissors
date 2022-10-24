@@ -4,7 +4,7 @@ for (let i = 0; i < 5; i++ ){
     let roundWinner=''
 
     function game(roundWinner){if  (roundWinner ==='player'){ (playerScore)++}
-    else ((computerScore)++)}
+    else ((computerScore)++)
 
     console.log('Player: ${playerScore}','Computer: ${computerScore}')
 
@@ -28,5 +28,5 @@ for (let i = 0; i < 5; i++ ){
         else{ 
             roundWinner='computer';
         }
-        }  
-
+        }
+    }
