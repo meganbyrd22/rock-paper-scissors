@@ -4,7 +4,8 @@ for (let i = 0; i < 5; i++ ){
     let roundWinner=''
 
     function game(playRound){if  (roundWinner ==='player'){ (playerScore)++}
-    else ((computerScore)++)
+    else if (roundWinner==='computer'){(computerScore)++}
+    else (){return'Tie! No one scores'}
 
     console.log('Player: ${playerScore}','Computer: ${computerScore}')
 
