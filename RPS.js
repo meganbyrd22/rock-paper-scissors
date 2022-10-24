@@ -5,7 +5,7 @@ for (let i = 0; i < 5; i++ ){
     let choices='Rock, Paper, Scissors'
 
     function getComputerChoice () {
-        let computerChoice = choice [Math.floor (Math.random ()*  choices.lenth)]
+        let computerChoice = choice [Math.floor (Math.random ()*  choices.length)]
         return computerChoice;
         
     function playRound           (playerChoice, computerChoice) {playerChoice = prompt("Please choose Rock, Paper, or Scissors.");
