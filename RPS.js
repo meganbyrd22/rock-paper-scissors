@@ -3,7 +3,7 @@ for (let i = 0; i < 5; i++ ){
     let computerScore=0
     let roundWinner=''
 
-    function game(roundWinner){if  (roundWinner ==='player'){ (playerScore)++}
+    function game(playRound){if  (roundWinner ==='player'){ (playerScore)++}
     else ((computerScore)++)
 
     console.log('Player: ${playerScore}','Computer: ${computerScore}')
