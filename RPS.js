@@ -2,7 +2,12 @@ for (let i = 0; i < 5; i++ ){
     let playerScore=0
     let computerScore=0
     let roundWinner=''
-function game(){playRound}
+
+    function game(roundWinner){if  (roundWinner ==='player'){ (playerScore)++}
+    else ((computerScore)++)}
+
+    console.log('Player: ${playerScore}','Computer: ${computerScore}')
+
     function getComputerChoice () {
         let computerChoice = choice [Math.floor (Math.random ()*  choices.lenth)]
         return computerChoice;
@@ -25,9 +30,3 @@ function game(){playRound}
         }
         }  
 
-    function updateScore(){
-        if (roundWinner ==='player'){ (playerScore)++}
-        else ((computerScore)++)}
-   
-        console.log('Player: ${playerScore}','Computer: ${computerScore}')
-}
