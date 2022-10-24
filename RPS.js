@@ -2,7 +2,7 @@ for (let i = 0; i < 5; i++ ){
     
     let choices=("Rock", "Paper", "Scissors")
    
-    function playRound(playerChoice, computerChoice) {let playerChoice = prompt("Please choose Rock, Paper, or Scissors.");
+    function playRound(playerChoice, computerChoice) {let playerChoice = prompt("Please choose Rock, Paper, or Scissors.")};
         if (playerChoice === computerChoice) {roundWinner='tie'}
     
         else if (playerChoice==='Rock' && computerChoice ==='Scissor') {
