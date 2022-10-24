@@ -51,6 +51,6 @@ for (let i = 0; i < 5; i++ ){
     function updateScore(){
         if (roundWinner='player'){ (playerScore)++}
         else ((computerScore)++)}
-   console.log('Player${playerScore}', 
-   'Computer${computerScore}')
+   
+        console.log('Player: ${playerScore}','Computer: ${computerScore}')
 }
