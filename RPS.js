@@ -22,17 +22,18 @@ function getComputerChoice() {
     let randomNumber = Math.floor(Math.random() * 3)
     switch (randomNumber) {
         case 0:
-            return 'ROCK'
+         return 'ROCK'
         case 1:
          return 'PAPER'
         case 2:
-            return 'SCISSORS'
+         return 'SCISSORS'
     }
 }
+
 function showWinner() {
     if (roundWinner ==='player')
-    console.log('You win!')
-    else console.log('You lose!')}
+    return('You win!');
+    else return ('You lose!')}
 
 
 function game(playRound)
