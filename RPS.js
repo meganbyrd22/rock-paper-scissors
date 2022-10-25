@@ -2,7 +2,7 @@ let choices=['Rock', 'Paper', 'Scissors']
 
 function getComputerChoice() { 
     choices [Math.floor (Math.random ()*  choices.length)]
-    return (computerChoice)
+    return ('Rock'||'Paper'||'Scissors')
 };
 
 function playRound(playerChoice, computerChoice){
