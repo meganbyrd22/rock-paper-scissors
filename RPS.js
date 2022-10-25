@@ -16,10 +16,10 @@ function playRound(playerChoice, computerChoice){
     else{ 
     roundWinner='computer';}
     }
-function getComputerChoice() { 
-    choices [Math.floor (Math.random ()*  choices.length)]
-    return ('Rock'||'Paper'||'Scissors')
+function getComputerChoice() {let computerChoice = Math.floor(Math.random()*  choices.length);
+return (computerChoice)
     };
+
 function game(playRound)
 let playerScore=0
 let computerScore=0
