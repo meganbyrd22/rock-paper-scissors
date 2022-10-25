@@ -2,7 +2,6 @@ let choices=("Rock", "Paper", "Scissors")
 let playerScore=0
 let computerScore=0
 let roundWinner=''
-let computerChoice=${getComputerChoice};
   
 function playRound(playerChoice, computerChoice){
     let playerChoice = prompt("Please choose Rock, Paper, or Scissors.");
