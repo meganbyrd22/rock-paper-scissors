@@ -7,7 +7,7 @@
     let computerScore=0
     let roundWinner=''
     let playerChoice = prompt("Please choose Rock, Paper, or Scissors.");
-    let computerChoice=(getComputerChoice);
+    let computerChoice=${getComputerChoice};
     
 
     function game()
@@ -15,7 +15,6 @@
     else if (roundWinner==='computer'){(computerScore)++}
     else ()=>{return'Tie! No one scores'}
 
-    
     
     function playRound(playerChoice, computerChoice) {
         if (playerChoice === computerChoice) {roundWinner='tie'}
@@ -35,4 +34,4 @@
     
     }
     }
-    console.log('Player: ${playerScore}','Computer: ${computerScore}')}
+    console.log('Player: ${playerScore}','Computer: ${computerScore}')
