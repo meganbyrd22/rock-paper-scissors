@@ -1,7 +1,4 @@
 let choices=['Rock', 'Paper', 'Scissors']
-let playerScore=0
-let computerScore=0
-let roundWinner=''
 
 function getComputerChoice() {
     choices [Math.floor (Math.random ()*  choices.length)]};
@@ -24,6 +21,9 @@ function playRound(playerChoice, computerChoice){
     }
 
 function game(playRound)
+let playerScore=0
+let computerScore=0
+let roundWinner=''
     for (let i = 0; i < 5; i++) {
     {if  (roundWinner ==='player'){ (playerScore)++}
     else if (roundWinner==='computer'){(computerScore)++}
