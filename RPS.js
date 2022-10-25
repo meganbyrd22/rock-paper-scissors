@@ -1,10 +1,8 @@
 let choices=['Rock', 'Paper', 'Scissors']
 
-
 function playRound(playerChoice, computerChoice){
     let playerChoice = prompt('Please choose Rock, Paper, or Scissors.');
-    let computerChoice= (getComputerChoice)
-   ;
+    let computerChoice= (getComputerChoice);
 
     if (playerChoice === computerChoice) {roundWinner='tie';}
     
@@ -20,10 +18,17 @@ function playRound(playerChoice, computerChoice){
     roundWinner='computer';}
     }
 
-function getComputerChoice() 
-    {choices(Math.floor(Math.random()*  choices.length));  
-    };
-
+function getComputerChoice() {
+    let randomNumber = Math.floor(Math.random() * 3)
+    switch (randomNumber) {
+        case 0:
+            return 'ROCK'
+        case 1:
+         return 'PAPER'
+        case 2:
+            return 'SCISSORS'
+    }
+}
 function showWinner() {
     if (roundWinner ==='player')
     console.log('You win!')
