@@ -20,6 +20,7 @@ function playRound(playerChoice, computerChoice){
 function getComputerChoice() 
     {let computerChoice = choices(Math.floor(Math.random()*  choices.length));  
     };
+let computerChoice=${getComputerChoice}
 
 function game(playRound)
 let playerScore=0
