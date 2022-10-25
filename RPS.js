@@ -7,7 +7,8 @@ let playerChoice = prompt('Please choose Rock, Paper, or Scissors.');
 
 function getComputerChoice(){
     let computerChoice = choices [Math.floor (Math.random ()*  choices.length)]
-    return computerChoice};
+    return computerChoice;
+    }
 
 function playRound(playerChoice, computerChoice){
 
