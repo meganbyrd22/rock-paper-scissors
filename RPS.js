@@ -1,10 +1,5 @@
 let choices=['Rock', 'Paper', 'Scissors']
 
-function getComputerChoice() { 
-    choices [Math.floor (Math.random ()*  choices.length)]
-    return ('Rock'||'Paper'||'Scissors')
-};
-
 function playRound(playerChoice, computerChoice){
     let playerChoice = prompt('Please choose Rock, Paper, or Scissors.');
     let computerChoice= (getComputerChoice);
@@ -21,7 +16,10 @@ function playRound(playerChoice, computerChoice){
     else{ 
     roundWinner='computer';}
     }
-
+function getComputerChoice() { 
+    choices [Math.floor (Math.random ()*  choices.length)]
+    return ('Rock'||'Paper'||'Scissors')
+    };
 function game(playRound)
 let playerScore=0
 let computerScore=0
