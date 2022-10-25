@@ -4,7 +4,7 @@ let computerScore=0
 let roundWinner=''
 
 function getComputerChoice() {
-    let computerChoice = choices [Math.floor (Math.random ()*  choices.length)]
+    choices [Math.floor (Math.random ()*  choices.length)]
     };
 
 function playRound(playerChoice, computerChoice){
