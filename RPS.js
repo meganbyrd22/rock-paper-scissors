@@ -1,10 +1,11 @@
 for (let i = 0; i < 5; i++ ){
     
     let choices=("Rock", "Paper", "Scissors")
-    function game()
     let playerScore=0
     let computerScore=0
     let roundWinner=''
+
+    function game()
     {if  (roundWinner ==='player'){ (playerScore)++}
     else if (roundWinner==='computer'){(computerScore)++}
     else ()=>{return'Tie! No one scores'}
