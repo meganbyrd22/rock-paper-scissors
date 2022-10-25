@@ -1,4 +1,4 @@
-let choices=('Rock', 'Paper', 'Scissors')
+let choices=['Rock', 'Paper', 'Scissors']
 let playerScore=0
 let computerScore=0
 let roundWinner=''
