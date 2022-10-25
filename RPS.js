@@ -23,11 +23,10 @@ function playRound(playerChoice, computerChoice){
     }
 
     function game()
+    for (let i = 0; i < 5; i++) {
     {if  (roundWinner ==='player'){ (playerScore)++}
     else if (roundWinner==='computer'){(computerScore)++}
     else ()=>{return'Tie! No one scores'}
-    }
-    
     }
     }
     console.log('Player: ${playerScore}','Computer: ${computerScore}')
