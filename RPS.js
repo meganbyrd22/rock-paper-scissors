@@ -24,7 +24,7 @@ function playRound(playerChoice, computerChoice){
     roundWinner='computer';}
     }
 
-function game()
+function game(playRound)
     for (let i = 0; i < 5; i++) {
     {if  (roundWinner ==='player'){ (playerScore)++}
     else if (roundWinner==='computer'){(computerScore)++}
