@@ -9,19 +9,19 @@ function playRound(playerChoice, computerChoice){
     let computerChoice = choices [Math.floor (Math.random ()*  choices.length)]
     return computerChoice;
 
-    if (playerChoice === computerChoice) {roundWinner='tie'}
+    if (playerChoice === computerChoice) {roundWinner='tie';}
     
     else if (playerChoice==='Rock' && computerChoice ==='Scissor') {
-    roundWinner='player'}
+    roundWinner='player';}
     
     else if (playerChoice ==='Paper' && computerChoice ==='Rock') {
-    roundWinner='player'}
+    roundWinner='player';}
         
     else if (playerChoice ==='Scissor' && computerChoice ==='Paper'){
     roundWinner='player';}
     else{ 
     roundWinner='computer';}
-    
+    }
 
     function game()
     {if  (roundWinner ==='player'){ (playerScore)++}
