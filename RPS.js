@@ -9,13 +9,6 @@
         let computerChoice = choices [Math.floor (Math.random ()*  choices.length)]
         return computerChoice;
     
-
-    function game()
-    {if  (roundWinner ==='player'){ (playerScore)++}
-    else if (roundWinner==='computer'){(computerScore)++}
-    else ()=>{return'Tie! No one scores'}
-
-    
     function playRound(playerChoice, computerChoice) {
         if (playerChoice === computerChoice) {roundWinner='tie'}
     
@@ -30,6 +23,11 @@
         else{ 
             roundWinner='computer';
         }
+
+    function game()
+    {if  (roundWinner ==='player'){ (playerScore)++}
+    else if (roundWinner==='computer'){(computerScore)++}
+    else ()=>{return'Tie! No one scores'}
     }
     
     }
