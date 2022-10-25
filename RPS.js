@@ -16,9 +16,9 @@ function playRound(playerChoice, computerChoice){
     else{ 
     roundWinner='computer';}
     }
+
 function getComputerChoice() 
     {let computerChoice = choices(Math.floor(Math.random()*  choices.length));  
-    return (computerChoice)
     };
 
 function game(playRound)
