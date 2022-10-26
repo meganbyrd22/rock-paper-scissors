@@ -43,8 +43,10 @@ function showWinner() {
 function updateScore(){ 
     {if  (showWinner ==='You win!'){ (playerScore)++}
     else if (showWinner==='You lose!'){(computerScore)++}
+    }
+}
 
 
 function game(){
-    for (let i = 0; i < 5; i++)
-    return(('Player:' (playerScore) |'Computer:' (computerScore)}
+    {for (let i = 0; i < 5; i++)
+    return(('Player:' (playerScore) |'Computer:' (computerScore)
