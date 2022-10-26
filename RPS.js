@@ -46,6 +46,7 @@ function updateScore(){
     else if (showWinner==='You lose!'){(computerScore)++}
     }
 }
-
-function game()
-    return(('Player:' (playerScore) |'Computer:' (computerScore)))
+function game(){
+    if (playerScore++)
+    return (('Player:' (playerScore) |'Computer:' (computerScore)))
+}
