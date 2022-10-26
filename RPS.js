@@ -20,7 +20,6 @@ function playRound(playerChoice, computerChoice){
     roundWinner='player';}
     else{ 
     roundWinner='computer';}
-
     }
 
 function getComputerChoice() {
@@ -42,10 +41,11 @@ function showWinner() {
     else return('Tie, no one scores!')}
 
 
-function game(roundWinner);
-    for (let i = 0; i < 5; i++) {
+function game(showWinner){
+    for (let i = 0; i < 5; i++)
     {if  (showWinner ==='You win!'){ (playerScore)++}
     else if (showWinner==='You lose!'){(computerScore)++}
     }
-    }
     console.log('Player: ${playerScore}','Computer: ${computerScore}')
+}
+
