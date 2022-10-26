@@ -41,11 +41,11 @@ function showWinner() {
     else return('Tie, no one scores!')}
 
 function updateScore(){ 
+    for (let i = 0; i < 5; i++)
     {if  (showWinner ==='You win!'){ (playerScore)++}
     else if (showWinner==='You lose!'){(computerScore)++}
     }
 }
 
 function game()
-    for (let i = 0; i < 5; i++)
     return(('Player:' (playerScore) |'Computer:' (computerScore)))
