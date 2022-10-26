@@ -1,6 +1,6 @@
-let choices=['Rock', 'Paper', 'Scissors']
-let playerChoice = prompt('Please choose Rock, Paper, or Scissors.');
-let computerChoice= (getComputerChoice);
+const choices=['Rock', 'Paper', 'Scissors']
+const playerChoice = prompt('Please choose Rock, Paper, or Scissors.');
+const computerChoice= (getComputerChoice);
 
 function playRound(playerChoice, computerChoice){
     
