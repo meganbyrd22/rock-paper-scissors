@@ -45,12 +45,12 @@ function updateScore(){
     else if (showWinner==='You lose!'){(computerScore)++}
     }
 
-function game(updateScore){
+function game(){
     for (let i = 0; i < 5; i++)
-    if ((playerScore)++) 
+    if (showWinner=('You win!')((playerScore)++));
     return ('Player: ${playerScore}','Computer: ${computerScore}') 
-    else return('Player: ${playerScore}','Computer: ${computerScore}')
+    else if (showWinner=('You lose!')(computerScore)++);
+    return('Player: ${playerScore}','Computer: ${computerScore}')
     }
- 
 }
 
