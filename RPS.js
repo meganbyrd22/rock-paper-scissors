@@ -42,8 +42,7 @@ function showWinner() {
     else return('Tie, no one scores!')}
 
 
-function game(playRound)
-
+function game(roundWinner);
     for (let i = 0; i < 5; i++) {
     {if  (showWinner ==='You win!'){ (playerScore)++}
     else if (showWinner==='You lose!'){(computerScore)++}
