@@ -1,9 +1,9 @@
 let choices=['Rock', 'Paper', 'Scissors']
+let playerChoice = prompt('Please choose Rock, Paper, or Scissors.');
+let computerChoice= (getComputerChoice);
 
 function playRound(playerChoice, computerChoice){
-    let playerChoice = prompt('Please choose Rock, Paper, or Scissors.');
-    let computerChoice= (getComputerChoice);
-
+    
     if (playerChoice === computerChoice) {roundWinner='tie';}
     
     else if (playerChoice==='Rock' && computerChoice ==='Scissor') {
