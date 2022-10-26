@@ -16,6 +16,7 @@ function playRound(playerChoice, computerChoice){
     roundWinner='player';}
     else{ 
     roundWinner='computer';}
+
     }
 
 function getComputerChoice() {
@@ -41,8 +42,8 @@ let playerScore=0
 let computerScore=0
 let roundWinner=''
     for (let i = 0; i < 5; i++) {
-    {if  (roundWinner ==='player'){ (playerScore)++}
-    else if (roundWinner==='computer'){(computerScore)++}
+    {if  (showWinner ==='You win!'){ (playerScore)++}
+    else if (showWinner==='You lose!'){(computerScore)++}
     else ()=>{return'Tie! No one scores'}
     }
     }
