@@ -46,6 +46,5 @@ function updateScore(){
 
 function game(){
     for (let i = 0; i < 5; i++)
-    console.log(('Player:' ${playerScore} + 'Computer:' ${computerScore}'))
-}
+    return(('Player:' (${playerScore} |'Computer:' (${computerScore})
 }
