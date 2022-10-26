@@ -2,6 +2,10 @@ const choices=['Rock', 'Paper', 'Scissors']
 const playerChoice = prompt('Please choose Rock, Paper, or Scissors.');
 const computerChoice= (getComputerChoice);
 
+let playerScore=0
+let computerScore=0
+let roundWinner=''
+
 function playRound(playerChoice, computerChoice){
     
     if (playerChoice === computerChoice) {roundWinner='tie';}
@@ -39,9 +43,7 @@ function showWinner() {
 
 
 function game(playRound)
-let playerScore=0
-let computerScore=0
-let roundWinner=''
+
     for (let i = 0; i < 5; i++) {
     {if  (showWinner ==='You win!'){ (playerScore)++}
     else if (showWinner==='You lose!'){(computerScore)++}
