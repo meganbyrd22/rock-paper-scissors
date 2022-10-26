@@ -40,12 +40,16 @@ function showWinner() {
     else if (roundWinner ==='computer') return ('You lose!')
     else return('Tie, no one scores!')}
 
+function updateScore() 
+    if ((playerScore)++) 
+    return ('Player: ${playerScore}','Computer: ${computerScore}') 
+    else return('Player: ${playerScore}','Computer: ${computerScore}')
 
 function game(showWinner){
     for (let i = 0; i < 5; i++)
     {if  (showWinner ==='You win!'){ (playerScore)++}
     else if (showWinner==='You lose!'){(computerScore)++}
     }
-    console.log('Player: ${playerScore}','Computer: ${computerScore}')
+    
 }
 
