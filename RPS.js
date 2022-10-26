@@ -34,7 +34,8 @@ function getComputerChoice() {
 function showWinner() {
     if (roundWinner ==='player')
     return('You win!');
-    else return ('You lose!')}
+    else if (roundWinner ==='computer') return ('You lose!')
+    else return('Tie, no one scores!')}
 
 
 function game(playRound)
@@ -44,7 +45,6 @@ let roundWinner=''
     for (let i = 0; i < 5; i++) {
     {if  (showWinner ==='You win!'){ (playerScore)++}
     else if (showWinner==='You lose!'){(computerScore)++}
-    else ()=>{return'Tie! No one scores'}
     }
     }
     console.log('Player: ${playerScore}','Computer: ${computerScore}')
