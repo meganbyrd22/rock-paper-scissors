@@ -46,7 +46,6 @@ function updateScore(){
     }
 }
 
-
-function game(){
-    {for (let i = 0; i < 5; i++)
-    return(('Player:' (playerScore) |'Computer:' (computerScore)
+function game()
+    for (let i = 0; i < 5; i++)
+    return(('Player:' (playerScore) |'Computer:' (computerScore)))
