@@ -47,6 +47,6 @@ function updateScore(){
     }
 }
 function game(){
-    if (updateScore= playerScore++ || computerScore++)
+    if (updateScore= (playerScore)++ || (computerScore)++)
     return (('Player:' (playerScore) |'Computer:' (computerScore)))
 }
