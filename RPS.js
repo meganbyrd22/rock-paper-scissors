@@ -50,3 +50,4 @@ function game(){
     if (updateScore= playerScore++ || computerScore++)
     return (('Player:' (playerScore) |'Computer:' (computerScore)))
 }
+console.log(playRound(playerChoice, computerChoice));
