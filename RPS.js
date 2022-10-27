@@ -49,5 +49,5 @@ function updateScore(){
 
 function game(){
     if (updateScore= (playerScore)++ || (computerScore)++)
-    return (toString)(textContent='Player:'(playerScore) |(textContent='Computer:' (computerScore)))
+    return (toString)('Player:'(playerScore) |('Computer:' (computerScore)))
 }
