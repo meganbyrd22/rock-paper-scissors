@@ -49,5 +49,5 @@ function updateScore(){
 
 function game(){
     if (updateScore= (playerScore)++ || (computerScore)++)
-    return (getElementById('Player Score:'(playerScore))) | (getElementById('Computer Score:' (computerScore)))
+    return (getElementById('Player-Score'(playerScore))) | (getElementById('Computer-Score' (computerScore)))
 }
