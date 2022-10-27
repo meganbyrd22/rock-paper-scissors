@@ -10,13 +10,13 @@ function playRound(playerChoice, computerChoice){
     
     if (playerChoice === computerChoice) {roundWinner='tie';}
     
-    else if (playerChoice==='Rock' && computerChoice ==='Scissor') {
+    else if (playerChoice==='Rock' && computerChoice ==='Scissors') {
     roundWinner='player';}
     
     else if (playerChoice ==='Paper' && computerChoice ==='Rock') {
     roundWinner='player';}
         
-    else if (playerChoice ==='Scissor' && computerChoice ==='Paper'){
+    else if (playerChoice ==='Scissors' && computerChoice ==='Paper'){
     roundWinner='player';}
     else{ 
     roundWinner='computer';}
