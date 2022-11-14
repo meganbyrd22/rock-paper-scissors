@@ -6,6 +6,12 @@ let playerScore=0
 let computerScore=0
 let roundWinner=''
 
+const btn = document.querySelectorAll('#buttons');
+btn.addEventListener('click', (playRound)){
+    console.log(payerChoice);
+}
+
+
 function playRound(playerChoice, computerChoice){
     
     if (playerChoice === computerChoice) {roundWinner='tie';}
