@@ -8,7 +8,7 @@ let roundWinner=''
 
 const btn = document.querySelector('#buttons');
 btn.addEventListener('click', (playRound)){
-    console.log(playerChoice);
+    console.log(button.id);
 }
 
 
