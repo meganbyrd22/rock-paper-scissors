@@ -8,7 +8,6 @@ let roundWinner=''
 const btn = document.querySelectorAll('button');
 
 btn.addEventListener('click', () => {
-    playerChoice = button.textContent();
     playRound();
     console.log(roundWinner)})
     
