@@ -5,9 +5,9 @@ let playerScore=0
 let computerScore=0
 let roundWinner=''
 
-const btnRock = document.querySelector("#ROCK");
-const btnPaper = document.querySelector("#PAPER");
-const btnScissors = document.querySelector("#SCISSORS");
+const btnRock = document.querySelector([button="#ROCK"]);
+const btnPaper = document.querySelector([button="#PAPER"]);
+const btnScissors = document.querySelector([button="#SCISSORS"]);
 
 btnRock.addEventListener('click', function(){
     playerChoice = 'ROCK';
