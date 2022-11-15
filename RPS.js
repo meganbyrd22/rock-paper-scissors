@@ -6,7 +6,7 @@ let computerScore=0
 let roundWinner=''
 
 const playerChoice = document.querySelectorAll('button');
-    btn.addEventListener('click', (playRound))
+    playerChoice.addEventListener('click', (playRound))
     {console.log('button.id');
 }
 
