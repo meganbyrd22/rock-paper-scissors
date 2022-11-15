@@ -5,10 +5,6 @@ let playerScore=0
 let computerScore=0
 let roundWinner=''
 
-const btnRock = document.querySelector([button="#ROCK"]);
-const btnPaper = document.querySelector([button="#PAPER"]);
-const btnScissors = document.querySelector([button="#SCISSORS"]);
-
 btnRock.addEventListener('click',() => playRound(getComputerChoice(), 'ROCK'));
     console.log(roundWinner);
 
