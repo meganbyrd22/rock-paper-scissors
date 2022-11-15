@@ -8,18 +8,10 @@ let roundWinner=''
 
 const btn = document.querySelectorAll('button');
 
-btn.addEventListener('click', playRound){
-console.log(roundWinner)};
-
-function getPlayerChoice(btn.addEventListener('click', () => {
-    if (button = "Rock "){
-        return "ROCK"};
-    else if (button = "PAPER"){
-        return "PAPER"};
-    else {return "SCISSORS"
-    }
-    }
-
+btn.addEventListener('click', () => {
+    playerChoice = button.textContent();
+    console.log(playerChoice);
+    
 function playRound(playerChoice, computerChoice){
     
     if (playerChoice === computerChoice) {roundWinner='tie';}
