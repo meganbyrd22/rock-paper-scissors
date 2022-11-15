@@ -5,9 +5,9 @@ let playerScore=0
 let computerScore=0
 let roundWinner=''
 
-const playerChoice = document.querySelectorAll('button');
-    playerChoice.addEventListener('click',function() {playRound 
-        {console.log(roundWinner)}
+const btn = document.querySelectorAll('button');
+    btn.addEventListener('click', playerChoice)() {function playRound; 
+        console.log(roundWinner)}
 
 
 function playRound(playerChoice, computerChoice){
