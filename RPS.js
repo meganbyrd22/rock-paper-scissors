@@ -1,14 +1,24 @@
 const choices=['Rock', 'Paper', 'Scissors']
 const computerChoice= (getComputerChoice);
+const playerChoice= (getPlayerChoice);
 
 let playerScore=0
 let computerScore=0
 let roundWinner=''
 
 const btn = document.querySelectorAll('button');
-    btn.addEventListener('click', playerChoice)() {function playRound; 
-        console.log(roundWinner)}
 
+btn.addEventListener('click', playRound){
+console.log(roundWinner)};
+
+function getPlayerChoice(btn.addEventListener('click', () => {
+    if (button = "Rock "){
+        return "ROCK"};
+    else if (button = "PAPER"){
+        return "PAPER"};
+    else {return "SCISSORS"
+    }
+    }
 
 function playRound(playerChoice, computerChoice){
     
