@@ -6,10 +6,11 @@ let playerScore=0
 let computerScore=0
 let roundWinner=''
 
-const btn = document.querySelector('#buttons');
-
-btn.addEventListener(onclick, (playRound))
-{console.log(button.id);
+const btn = document.querySelector('button');
+    btn.forEach((button)) => {
+    btn.addEventListener(onclick, (playRound))
+    {console.log(button.id);
+    }
 }
 
 
