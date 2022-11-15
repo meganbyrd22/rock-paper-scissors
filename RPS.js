@@ -9,7 +9,8 @@ const btn = document.querySelectorAll('button');
 
 btn.addEventListener('click', () => {
     playerChoice = button.textContent();
-    console.log(playerChoice);
+    playRound();
+    console.log(roundWinner)})
     
 function playRound(playerChoice, computerChoice){
     
