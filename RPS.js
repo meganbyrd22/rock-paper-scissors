@@ -1,6 +1,5 @@
 const choices=['Rock', 'Paper', 'Scissors']
 const computerChoice= (getComputerChoice);
-const playerChoice = handleClick(btn);
 
 let playerScore=0
 let computerScore=0
@@ -13,7 +12,7 @@ btn.addEventListener('click', function() {
     playRound();
     console.log(roundWinner)})
     
-function playRound(playerChoice, computerChoice){
+function playRound(computerChoice, playerChoice){
     
     if (playerChoice === computerChoice) {roundWinner='tie';}
     
