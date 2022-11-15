@@ -11,7 +11,7 @@ const btn = document.querySelector('button');
     btn.addEventListener(onclick, (playRound))
     {console.log(button.id);
     }
-}
+})
 
 
 function playRound(playerChoice, computerChoice){
