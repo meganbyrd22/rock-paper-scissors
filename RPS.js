@@ -1,5 +1,6 @@
 const choices=['Rock', 'Paper', 'Scissors']
 const computerChoice= (getComputerChoice);
+const playerChoice = handleClick(btn);
 
 let playerScore=0
 let computerScore=0
@@ -7,7 +8,8 @@ let roundWinner=''
 
 const btn = document.querySelectorAll('button');
 
-btn.addEventListener('click', () => {
+btn.addEventListener('click', function() {
+    playerChoice = button.textContent;
     playRound();
     console.log(roundWinner)})
     
