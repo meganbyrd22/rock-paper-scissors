@@ -5,10 +5,22 @@ let playerScore=0
 let computerScore=0
 let roundWinner=''
 
-const btn = document.querySelectorAll('button');
+const btnRock = document.querySelector("#ROCK");
+const btnPaper = document.querySelector('#PAPER');
+const btnScissors = document.querySelector('#SCISSORS');
 
-btn.addEventListener('click', function() {
-    playerChoice = button.textContent;
+btnRock.addEventListener('click', function() {
+    playerChoice = "ROCK";
+    playRound();
+    console.log(roundWinner)})
+
+btnPaper.addEventListener('click', function() {
+    playerChoice = "PAPER";
+    playRound();
+    console.log(roundWinner)})
+
+btnScissors.addEventListener('click', function() {
+    playerChoice = "SCISSORS";
     playRound();
     console.log(roundWinner)})
     
