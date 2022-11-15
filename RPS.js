@@ -10,17 +10,17 @@ const btnPaper = document.querySelector('#PAPER');
 const btnScissors = document.querySelector('#SCISSORS');
 
 btnRock.addEventListener('click', function() {
-    playerChoice = "ROCK";
+    playerChoice = 'ROCK';
     playRound();
     console.log(roundWinner)})
 
 btnPaper.addEventListener('click', function() {
-    playerChoice = "PAPER";
+    playerChoice = 'PAPER';
     playRound();
     console.log(roundWinner)})
 
 btnScissors.addEventListener('click', function() {
-    playerChoice = "SCISSORS";
+    playerChoice = 'SCISSORS';
     playRound();
     console.log(roundWinner)})
     
