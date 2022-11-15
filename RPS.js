@@ -1,17 +1,14 @@
 const choices=['Rock', 'Paper', 'Scissors']
-const playerChoice = prompt('Please choose Rock, Paper, or Scissors.');
 const computerChoice= (getComputerChoice);
 
 let playerScore=0
 let computerScore=0
 let roundWinner=''
 
-const btn = document.querySelectorAll('button');
-    btn.addEventListener(onclick, (playRound))
+const playerChoice = document.querySelectorAll('button');
+    btn.addEventListener('click', (playRound))
     {console.log('button.id');
-    }
-
-
+}
 
 function playRound(playerChoice, computerChoice){
     
