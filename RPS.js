@@ -70,9 +70,10 @@ function showWinner() {
 }
 //update the score
 function updateScore(){ 
-    {if  (showWinner ==='You win!'){ (playerScore)++}
-    else if (showWinner==='You lose!'){(computerScore)++}
+    {if  (winnerMessage ==='You win!'){ (playerScore)++}
+    else if (winnerMessage ==='You lose!'){(computerScore)++}
     }
+    return playerScore, computerScore;
 }
 //show the total score 
 function game(){
