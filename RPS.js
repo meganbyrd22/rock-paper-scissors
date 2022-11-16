@@ -53,12 +53,12 @@ function getComputerChoice() {
 
 function showWinner() {
     if (roundWinner ==='player'){
-        showWinner.textContent('You win!')
+        showWinner.textContent('playerWins')
     }
     else if (roundWinner ==='computer'){
-        showWinner.textContent('You lose!')}
+        showWinner.textContent('computerWins')}
 
-    else {showWinner.textContent('Tie, no one scores!')}}
+    else {showWinner.textContent('tie')}}
 
 function updateScore(){ 
     {if  (showWinner ==='You win!'){ (playerScore)++}
