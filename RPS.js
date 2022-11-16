@@ -65,7 +65,7 @@ function showWinner() {
 
     else {winnerMessage.textContent='It\'s a tie!';
 
-    return winnerMessage.textContent;
+    return document.querySelectorAll(winnerMessage.textContent);
 }
 }
 //update the score
