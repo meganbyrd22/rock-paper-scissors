@@ -7,7 +7,7 @@ const winnerMessage = document.getElementById('winnerMessage');
 
 let playerScore=0
 let computerScore=0
-let roundWinner=''
+
 
 btnRock.addEventListener('click', function(){
     playerChoice = 'ROCK';
