@@ -11,17 +11,17 @@ let roundWinner=''
 btnRock.addEventListener('click', function(){
     playerChoice = 'ROCK';
     playRound();
-    console.log(roundWinner)});
+    return (roundWinner)});
 
 btnPaper.addEventListener('click', function(){
     playerChoice = 'PAPER';
     playRound();
-    console.log(roundWinner)})
+    return (roundWinner)})
 
 btnScissors.addEventListener('click', function(){
     playerChoice = 'SCISSORS';
     playRound();
-    console.log(roundWinner)})
+    return (roundWinner)})
     
 function playRound(computerChoice, playerChoice){
     
