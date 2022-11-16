@@ -8,8 +8,10 @@ let playerScore=0
 let computerScore=0
 let roundWinner=''
 
-btnRock.addEventListener('click',() => playRound(getComputerChoice(), 'ROCK'));
-    console.log(roundWinner);
+btnRock.addEventListener('click', function(){
+    playerChoice = 'ROCK';
+    playRound();
+    console.log(roundWinner)});
 
 btnPaper.addEventListener('click', function(){
     playerChoice = 'PAPER';
