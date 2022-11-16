@@ -61,7 +61,7 @@ function showWinner() {
 
     else {showWinner.textContent='It\'s a tie!';
 }
-
+}
 function updateScore(){ 
     {if  (showWinner ==='You win!'){ (playerScore)++}
     else if (showWinner==='You lose!'){(computerScore)++}
