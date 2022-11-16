@@ -58,7 +58,7 @@ function showWinner() {
     else if (roundWinner ==='computer'){
         showWinner.textContent('You lose!')}
 
-    else {showWinner.textContent('Tie, no one scores!')};
+    else {showWinner.textContent('Tie, no one scores!')}}
 
 function updateScore(){ 
     {if  (showWinner ==='You win!'){ (playerScore)++}
