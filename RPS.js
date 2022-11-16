@@ -8,7 +8,7 @@ const winnerMessage = document.getElementById('winnerMessage');
 let playerScore=0
 let computerScore=0
 
-
+//get player choice from button click
 btnRock.addEventListener('click', function(){
     playerChoice = 'ROCK';
     playRound();
@@ -23,7 +23,21 @@ btnScissors.addEventListener('click', function(){
     playerChoice = 'SCISSORS';
     playRound();
     return (roundWinner)})
-    
+
+//get computer choice from random selection
+function getComputerChoice() {
+    let randomNumber = Math.floor(Math.random() * 3)
+    switch (randomNumber) {
+        case 0:
+         return 'ROCK'
+        case 1:
+         return 'PAPER'
+        case 2:
+         return 'SCISSORS'
+    }
+}
+
+//play one round    
 function playRound(computerChoice, playerChoice){
     
     if (playerChoice === computerChoice) {roundWinner='tie';}
@@ -40,18 +54,7 @@ function playRound(computerChoice, playerChoice){
     roundWinner='computer';}
     }
 
-function getComputerChoice() {
-    let randomNumber = Math.floor(Math.random() * 3)
-    switch (randomNumber) {
-        case 0:
-         return 'ROCK'
-        case 1:
-         return 'PAPER'
-        case 2:
-         return 'SCISSORS'
-    }
-}
-
+//print a winner message 
 function showWinner() {
     if (roundWinner ==='player'){
         winnerMessage.textContent= 'You win!';
@@ -63,12 +66,13 @@ function showWinner() {
     else {showWinner.textContent='It\'s a tie!';
 }
 }
+//update the score
 function updateScore(){ 
     {if  (showWinner ==='You win!'){ (playerScore)++}
     else if (showWinner==='You lose!'){(computerScore)++}
     }
 }
-
+//show the total score 
 function game(){
     if (updateScore= (playerScore)++ || (computerScore)++)
     return (getElementById(Player-Score(playerScore))) + (getElementById(Computer-Score (computerScore)))
