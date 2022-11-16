@@ -11,8 +11,7 @@ let computerScore=0
 //get player choice from button click
 btnRock.addEventListener('click', function(){
     playerChoice = 'ROCK';
-    playRound();
-    return (roundWinner)});
+    playRound()})
 
 btnPaper.addEventListener('click', function(){
     playerChoice = 'PAPER';
