@@ -3,7 +3,7 @@ const computerChoice= (getComputerChoice);
 const btnRock = document.getElementById('btnRock');
 const btnPaper = document.getElementById('btnPaper');
 const btnScissors = document.getElementById('btnScissors');
-const showWinner = document.getElementById('showWinner');
+const winnerMessage = document.getElementById('winnerMessage');
 
 let playerScore=0
 let computerScore=0
@@ -54,10 +54,10 @@ function getComputerChoice() {
 
 function showWinner() {
     if (roundWinner ==='player'){
-        showWinner.textContent= 'You win!';
+        winnerMessage.textContent= 'You win!';
     }
     else if (roundWinner ==='computer'){
-        showWinner.textContent='You lose!';
+        winnerMessage.textContent='You lose!';
     }
 
     else {showWinner.textContent='It\'s a tie!';
