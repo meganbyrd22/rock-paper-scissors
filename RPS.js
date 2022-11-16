@@ -1,8 +1,6 @@
 const choices=['Rock', 'Paper', 'Scissors']
 const computerChoice= (getComputerChoice);
-const btnRock = document.getElementById('btnRock');
-const btnPaper = document.getElementById('btnPaper');
-const btnScissors = document.getElementById('btnScissors');
+
 const winnerMessage = document.getElementById('winnerMessage');
 
 let playerScore=0
