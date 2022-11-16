@@ -37,18 +37,21 @@ function getComputerChoice() {
 //play one round    
 function playRound(computerChoice, playerChoice){
     
-    if (playerChoice === computerChoice) {roundWinner='tie';}
+    if (playerChoice === computerChoice) {roundWinner ='tie'}
     
     else if (playerChoice==='ROCK' && computerChoice ==='SCISSORS') {
-    roundWinner='player';}
+    roundWinner ='player'}
     
     else if (playerChoice ==='PAPER' && computerChoice ==='ROCK') {
-    roundWinner='player';}
+    roundWinner ='player'}
         
     else if (playerChoice ==='SCISSORS' && computerChoice ==='PAPER'){
-    roundWinner='player';}
+    roundWinner='player'}
+
     else{ 
-    roundWinner='computer';}
+    roundWinner ='computer'};
+
+    return roundWinner;
     }
 
 //print a winner message 
