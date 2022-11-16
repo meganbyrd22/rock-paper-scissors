@@ -65,7 +65,7 @@ function showWinner() {
 
     else {winnerMessage.textContent='It\'s a tie!';
 
-    return winnerMessage;
+    return winnerMessage.textContent;
 }
 }
 //update the score
