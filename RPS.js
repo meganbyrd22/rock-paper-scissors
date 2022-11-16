@@ -1,8 +1,6 @@
 const choices=['Rock', 'Paper', 'Scissors']
 const computerChoice= (getComputerChoice);
 
-const winnerMessage = document.getElementById('winnerMessage');
-
 let playerScore=0
 let computerScore=0
 
