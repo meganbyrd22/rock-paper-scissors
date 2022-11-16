@@ -15,13 +15,11 @@ btnRock.addEventListener('click', function(){
 
 btnPaper.addEventListener('click', function(){
     playerChoice = 'PAPER';
-    playRound();
-    return (roundWinner)})
+    playRound()})
 
 btnScissors.addEventListener('click', function(){
     playerChoice = 'SCISSORS';
-    playRound();
-    return (roundWinner)})
+    playRound()})
 
 //get computer choice from random selection
 function getComputerChoice() {
