@@ -45,6 +45,7 @@ function playRound(computerChoice, playerChoice){
 
     return roundWinner;
     }
+    showWinner(roundWinner);
 
 //print a winner message 
 function showWinner() {
