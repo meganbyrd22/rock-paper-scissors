@@ -9,18 +9,18 @@ let computerScore=0
 function getPlayerChoice(){
     return playerChoice;
 } 
-btnRock.addEventListener('click',() =>  getPlayerChoice('ROCK'),
+btnRock.addEventListener('click',() =>  getPlayerChoice('ROCK')),
 //{
    //playerChoice = 'ROCK')
    //playRound()})
 
-btnPaper.addEventListener('click', function(){
-    playerChoice = 'PAPER';
-    playRound()})
+btnPaper.addEventListener('click', () => 
+    getPlayerChoice('PAPER'));
+    //playRound()})
     
-btnScissors.addEventListener('click', function(){
-    playerChoice = 'SCISSORS';
-    playRound()})
+btnScissors.addEventListener('click', () =>
+    getPlayerChoice = ('SCISSORS'));
+    //playRound()})
 
 //get computer choice from random selection
 function getComputerChoice() {
