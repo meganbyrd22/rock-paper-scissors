@@ -6,21 +6,22 @@ let computerScore=0
 
 //get player choice from button click
 // playerChoice 
-function getPlayerChoice(){
-    return getElementBydId(playerChoiceText);
-} 
+//function getPlayerChoice(){
+    //return getElementBydId(playerChoiceText);
+//} 
 
-btnRock.addEventListener('click',() =>  getPlayerChoice('ROCK')),
+btnRock.addEventListener('click', playRound);
+ //=>  getPlayerChoice('ROCK')),
 //{
    //playerChoice = 'ROCK')
    //playRound()})
 
-btnPaper.addEventListener('click', () => 
-    getPlayerChoice('PAPER'));
+btnPaper.addEventListener('click', playRound);
+    //getPlayerChoice('PAPER'));
     //playRound()})
     
-btnScissors.addEventListener('click', () =>
-    getPlayerChoice = ('SCISSORS'));
+btnScissors.addEventListener('click',playRound); 
+//=> getPlayerChoice = ('SCISSORS'));
     //playRound()})
 
 //get computer choice from random selection
