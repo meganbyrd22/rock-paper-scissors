@@ -10,6 +10,7 @@ const buttons = document.querySelectorAll('buttons');
 buttons.forEach((button) => 
     button.addEventListener('click', () => {
          playerChoice = (button.id);
+         playRound;
     }))
 
 //get computer choice from random selection
