@@ -6,17 +6,26 @@
   <script src="RPS.js" defer></script>
 </head>
 <body>
-  <div id = Player-Score></div>
-  <div id = Computer-Score></div>
+  <header>
+    <h1 class="title">ROCK PAPER SCISSORS</h1>
+  </header>
 
-  <h2 class="winnerMessage"></h2>
-  
+  <div class="scoreboard">Current Score:>
+    <h1 id = "playerScoreText"></h1>
+    <h1 id = "computerScoreText"></h1>
+  </div>
 
-  <div class = "buttons">
+
+  <div class ="buttons">
     <button id="btnRock">Rock</button> 
     <button id="btnPaper">Paper</button>
     <button id="btnScissors">Scissors</button>
   </div>
+
+  <div class="scoreMessage">
+    <h2 class="winnerMessage"></h2>
+  </div>
+
 </body>
 </html>
 
