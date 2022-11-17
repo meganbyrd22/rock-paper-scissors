@@ -5,14 +5,19 @@ let playerScore=0
 let computerScore=0
 
 //get player choice from button click
-btnRock.addEventListener('click', function(){
-    playerChoice = 'ROCK';
-    playRound()})
+// playerChoice 
+function getPlayerChoice(){
+    return playerChoice;
+} 
+btnRock.addEventListener('click',() =>  getPlayerChoice('ROCK'),
+//{
+   //playerChoice = 'ROCK')
+   //playRound()})
 
 btnPaper.addEventListener('click', function(){
     playerChoice = 'PAPER';
     playRound()})
-
+    
 btnScissors.addEventListener('click', function(){
     playerChoice = 'SCISSORS';
     playRound()})
