@@ -59,6 +59,8 @@ function showWinner() {
     else {return winnerMessage.textContent="It's a tie!";
 }
 }
+    updateScore(roundWinner, showWinner);
+    
 //update the score
 function updateScore(){ 
     {if  (winnerMessage ==='You win!'){ (playerScore)++}
