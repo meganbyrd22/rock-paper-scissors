@@ -31,19 +31,16 @@ function playRound(computerChoice, playerChoice){
     
     if (playerChoice === computerChoice) {roundWinner ='tie'}
     
-    else if (playerChoice==='ROCK' && computerChoice ==='SCISSORS') {
-    roundWinner ='player'}
+    else if 
+    ((playerChoice==='ROCK' && computerChoice ==='SCISSORS') || 
+    (playerChoice ==='PAPER' && computerChoice ==='ROCK') || 
+    (playerChoice ==='SCISSORS' && computerChoice ==='PAPER'))  
+    {roundWinner ='player'}
     
-    else if (playerChoice ==='PAPER' && computerChoice ==='ROCK') {
-    roundWinner ='player'}
-        
-    else if (playerChoice ==='SCISSORS' && computerChoice ==='PAPER'){
-    roundWinner='player'}
-
-    else{ 
-    roundWinner ='computer'};
+    else {roundWinner ='computer'};
 
     return roundWinner;
+
     }
     showWinner(roundWinner);
 
@@ -60,7 +57,7 @@ function showWinner() {
 }
 }
     updateScore(roundWinner, showWinner);
-    
+
 //update the score
 function updateScore(){ 
     {if  (winnerMessage ==='You win!'){ (playerScore)++}
