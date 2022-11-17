@@ -67,10 +67,10 @@ function updateScore(){
     {if  (winnerMessage ==='You win!'){ (playerScore)++}
     else if (winnerMessage ==='You lose!'){(computerScore)++}
     }
-    return playerScore, computerScore;
+    return playerScore.textContent = `Player: ${playerScore}`, computerScore.textContent= `Computer:${computerScore}`;
 }
 //show the total score 
-function game(){
-    if (updateScore= (playerScore)++ || (computerScore)++)
-    return (getElementById(Player-Score(playerScore))) + (getElementById(Computer-Score (computerScore)))
-}
+//function game(){
+   // if (updateScore= (playerScore)++ || (computerScore)++)
+   // return (getElementById(Player-Score(playerScore))) + (getElementById(Computer-Score (computerScore)))
+//}
