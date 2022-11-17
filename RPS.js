@@ -29,17 +29,15 @@ function getComputerChoice() {
 //play one round    
 function playRound(computerChoice, playerChoice){
     
-    if (playerChoice === computerChoice) {roundWinner ='tie'}
+    if (playerChoice === computerChoice) {return roundWinner ='tie'}
     
     else if 
     ((playerChoice==='ROCK' && computerChoice ==='SCISSORS') || 
     (playerChoice ==='PAPER' && computerChoice ==='ROCK') || 
     (playerChoice ==='SCISSORS' && computerChoice ==='PAPER'))  
-    {roundWinner ='player'}
+    {return roundWinner ='player'}
     
-    else {roundWinner ='computer'};
-
-    return roundWinner;
+    else {return roundWinner ='computer'};
 
     }
     showWinner(roundWinner);
