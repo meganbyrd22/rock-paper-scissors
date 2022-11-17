@@ -10,7 +10,7 @@ const buttons = document.querySelectorAll('buttons');
 buttons.forEach((button) => 
     button.addEventListener('click', () => {
          playerChoice = (button.id);
-    })
+    }))
  
 // player choice using individual buttons 
 btnRock.addEventListener('click', playRound)
