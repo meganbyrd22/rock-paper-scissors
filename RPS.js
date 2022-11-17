@@ -7,8 +7,9 @@ let computerScore=0
 //get player choice from button click
 // playerChoice 
 function getPlayerChoice(){
-    return playerChoice;
+    return getElementBydId(playerChoiceText);
 } 
+
 btnRock.addEventListener('click',() =>  getPlayerChoice('ROCK')),
 //{
    //playerChoice = 'ROCK')
