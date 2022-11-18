@@ -5,25 +5,19 @@ let playerScore=0
 let computerScore=0
 
 
-// playerChoice using querySelectorAll on buttons
-const buttons = document.querySelectorAll('buttons');
-buttons.forEach((button) => 
-    button.addEventListener('click', () => {
-   playerChoice()
-    }))
-
-function playerChoice() {
-    
-    if (button.id === btnRock){
-        return 'ROCK'
-    }
-    else if (button.id === btnPaper){
-        return 'PAPER'
-    }
-    else if (button.id === btnScissors){
-        return 'SCISSORS'
-    }
-}
+// get playerChoice from button then playRound
+btnRock.addEventListener('click', () => {
+     playerChoice = 'ROCK';
+     playRound;
+})
+btnPaper.addEventListener('click', ()=> {
+    playerChoice = 'PAPER';
+    playRound;
+})
+btnScissors.addEventListener('click', () => {
+    playerChoice = 'SCISSORS';
+    playRound;
+})
 
 //get computer choice from random selection
 function getComputerChoice() {
