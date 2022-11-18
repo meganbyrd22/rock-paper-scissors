@@ -38,9 +38,8 @@ function playRound(computerChoice, playerChoice){
     {return roundWinner ='player'}
     
     else {return roundWinner ='computer'};
-
     }
-    showWinner(roundWinner);
+    
 
 //print a winner message 
 function showWinner() {
@@ -54,7 +53,6 @@ function showWinner() {
     else {return winnerMessage.textContent="It's a tie!";
 }
 }
-    updateScore(roundWinner, showWinner);
 
 //update the score
 function updateScore(){ 
