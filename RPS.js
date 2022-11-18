@@ -53,7 +53,7 @@ function showWinner()
     else {return winnerMessage.textContent="It's a tie!";
 }
 }
-//update the score
+//update the score + display current score
 function updateScore(){ 
     {if  (winnerMessage ==='You win!'){ (playerScore)++}
     else if (winnerMessage ==='You lose!'){(computerScore)++}
@@ -61,9 +61,7 @@ function updateScore(){
     return playerScoreText.textContent = `Player: ${playerScore}`,computerScoreText.textContent= `Computer:${computerScore}`;
 }
 
-//show the total score 
-function game()
-    for (let i = 0, i < 5; i++){{
-    if (updateScore= (playerScore)++ || (computerScore)++)
-    return (getElementById(Player-Score(playerScore))) + (getElementById(Computer-Score (computerScore)))
-}}
+//loop through 5 rounds 
+function game (updateScore){
+    for (let i = 0, i<= 5, i++);
+}
