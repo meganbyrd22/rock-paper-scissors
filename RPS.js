@@ -63,5 +63,5 @@ function updateScore(){
 
 //loop through 5 rounds 
 function game (updateScore){
-    for (let i = 0, i<= 5, i++);
+    for (let i = 0; i < 5; i++);
 }
