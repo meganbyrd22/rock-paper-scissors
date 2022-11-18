@@ -7,8 +7,8 @@ let computerScore=0
 
 // get playerChoice from button then playRound
 btnRock.addEventListener('click', () => {
-     playerChoice = 'ROCK';
-     playRound;
+    playerChoice = 'ROCK';
+     playRound(playerChoice);
 })
 btnPaper.addEventListener('click', ()=> {
     playerChoice = 'PAPER';
