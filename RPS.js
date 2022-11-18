@@ -28,8 +28,8 @@ function getComputerChoice() {
 
 //play one round    
 function playRound(computerChoice, playerChoice){
-    
-    if (playerChoice === computerChoice) {return roundWinner ='tie'}
+    for (let i = 0; i < 5; i++)
+    {if (playerChoice === computerChoice) {return roundWinner ='tie'}
     
     else if 
     ((playerChoice==='ROCK' && computerChoice ==='SCISSORS') || 
@@ -39,7 +39,7 @@ function playRound(computerChoice, playerChoice){
     
     else {return roundWinner ='computer'};
     }
-    
+}
 
 //print a winner message 
 function showWinner()
@@ -61,7 +61,3 @@ function updateScore(){
     return playerScoreText.textContent = `Player: ${playerScore}`,computerScoreText.textContent= `Computer:${computerScore}`;
 }
 
-//loop through 5 rounds 
-function game (updateScore){
-    for (let i = 0; i < 5; i++);
-}
