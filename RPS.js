@@ -9,11 +9,11 @@ let computerScore=0
 const buttons = document.querySelectorAll('buttons');
 buttons.forEach((button) => 
     button.addEventListener('click', () => {
-         return (button.id);
-         //playRound;
+    getPlayerChoice()
     }))
-//return playerChoice 
-function getPlayerChoice(){
+
+function getPlayerChoice() {
+    
     if (button.id === btnRock){
         return 'ROCK'
     }
@@ -24,6 +24,7 @@ function getPlayerChoice(){
         return 'SCISSORS'
     }
 }
+
 //get computer choice from random selection
 function getComputerChoice() {
     let randomNumber = Math.floor(Math.random() * 3)
