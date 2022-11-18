@@ -9,10 +9,10 @@ let computerScore=0
 const buttons = document.querySelectorAll('buttons');
 buttons.forEach((button) => 
     button.addEventListener('click', () => {
-    getPlayerChoice()
+   playerChoice()
     }))
 
-function getPlayerChoice() {
+function playerChoice() {
     
     if (button.id === btnRock){
         return 'ROCK'
