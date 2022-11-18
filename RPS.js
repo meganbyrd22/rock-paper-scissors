@@ -12,7 +12,18 @@ buttons.forEach((button) =>
          playerChoice = (button.id);
          playRound;
     }))
-
+//return playerChoice 
+function getPlayerChoice(button.id){
+    if (button.id === btnRock){
+        return 'ROCK'
+    }
+    else if (button.id === btnPaper){
+        return 'PAPER'
+    }
+    else if (button.id === btnScissors){
+        return 'SCISSORS'
+    }
+}
 //get computer choice from random selection
 function getComputerChoice() {
     let randomNumber = Math.floor(Math.random() * 3)
