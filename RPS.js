@@ -6,11 +6,10 @@ let playerScore=0
 let computerScore=0
 
 
-// get playerChoice from button 
+// get playerChoice from button and initialize playRound 
 btnRock.addEventListener('click', () => {
      playerChoice ='ROCK';
      playRound(playerChoice, computerChoice)})
-
 
 btnPaper.addEventListener('click', ()=> {
     playerChoice = 'PAPER';
@@ -45,15 +44,15 @@ function getComputerChoice() {
 //play one round    
 function playRound(computerChoice, playerChoice){
     for (let i = 0; i < 5; i++)
-    {if (playerChoice === computerChoice) {return roundWinner ='tie'}
+    {if (playerChoice === computerChoice) { roundWinner ='tie'}
     
     else if 
     ((playerChoice==='ROCK' && computerChoice ==='SCISSORS') || 
     (playerChoice ==='PAPER' && computerChoice ==='ROCK') || 
     (playerChoice ==='SCISSORS' && computerChoice ==='PAPER'))  
-    {return roundWinner ='player'}
+    {roundWinner ='player'}
     
-    else {return roundWinner ='computer'};
+    else {roundWinner ='computer'};
     }
 }
 
