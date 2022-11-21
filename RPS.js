@@ -7,17 +7,21 @@ let computerScore=0
 
 
 // get playerChoice from button 
-btnRock.addEventListener('click', () => handleClick('ROCK'))
+btnRock.addEventListener('click', () => {
+     playerChoice ='ROCK';
+     playRound(playerChoice, computerChoice)})
 
-btnPaper.addEventListener('click', ()=> 
-    handleClick('PAPER'))
+
+btnPaper.addEventListener('click', ()=> {
+    handleClick('PAPER')})
     
-btnScissors.addEventListener('click', () => 
-   handleClick('SCISSORS'))
+btnScissors.addEventListener('click', () => {
+   handleClick('SCISSORS')})
     
 //get playerChoice from results of eventListener
  function handleClick(){
-   playerChoice(e) }
+    playerChoice = (e);
+    playRound(playerChoice, computerChoice)}
     //(playerScore < 5 && computerScore < 5)
     //return playerChoice;
     //else return 'Game over!' };
