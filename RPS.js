@@ -51,14 +51,14 @@ function playRound(computerChoice, playerChoice){
 //print a winner message 
 function showWinner()
     {if (roundWinner ==='player'){
-        return winnerMessage = "You win!";
+        return winnerMessage = 'You win!';
     }
     else if (roundWinner ==='computer'){
-         return winnerMessage ="You lose!";
+         return winnerMessage ='You lose!';
     }
-    else {return winnerMessage ="It's a tie!";
+    else {return winnerMessage ='It\'s a tie!';
     }
-    updateScore(winnerMessage);
+
 }
 
 //update the score + display current score
