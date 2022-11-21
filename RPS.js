@@ -73,6 +73,6 @@ function updateScore(){
     {if  (winnerMessage ==='You win!'){ (playerScore)++}
     else if (winnerMessage ==='You lose!'){(computerScore)++}
     }
-    return playerScoreText.textContent = `Player: ${playerScore}`,computerScoreText.textContent= `Computer:${computerScore}`;
+    playerScoreText.textContent = `Player: ${playerScore}`,computerScoreText.textContent= `Computer:${computerScore}`;
 }
 
