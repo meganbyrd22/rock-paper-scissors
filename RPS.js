@@ -14,11 +14,11 @@ btnRock.addEventListener('click', () => {
 
 btnPaper.addEventListener('click', ()=> {
     playerChoice = 'PAPER';
-    playRound(playerChoice, computerChoice))
+    playRound(playerChoice, computerChoice)})
     
 btnScissors.addEventListener('click', () => {
    playerChoice = 'SCISSORS';
-   playRound (playerChoice, computerChoice))
+   playRound (playerChoice, computerChoice)})
     
 //get playerChoice from results of eventListener
  //function handleClick(){
