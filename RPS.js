@@ -54,6 +54,7 @@ function playRound(computerChoice, playerChoice){
     
     else {roundWinner ='computer'};
     }
+    showWinner(roundWinner);
 }
 
 //print a winner message 
