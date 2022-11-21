@@ -8,8 +8,7 @@ let computerScore=0
 
 // get playerChoice from button 
 btnRock.addEventListener('click', () => 
-    handleClick('ROCK'));
-
+    handleClick('ROCK'))
 
 btnPaper.addEventListener('click', ()=> 
     handleClick('PAPER'))
@@ -20,8 +19,8 @@ btnScissors.addEventListener('click', () =>
 //get playerChoice from results of eventListener
  function handleClick(){
     if (playerScore < 5 || computerScore < 5)
-    return ;
-    else return 'Game over!'  };
+    return document.getElementById(button);
+    else return 'Game over!' };
     
 
 //get computer choice from random selection
