@@ -1,35 +1,33 @@
 const choices=['Rock', 'Paper', 'Scissors']
 const computerChoice= (getComputerChoice);
-const playerChoice= (getPlayerChoice);
+//const playerChoice= (getPlayerChoice);
 
 let playerScore=0
 let computerScore=0
 
 
-// get playerChoice from button then playRound
+// get playerChoice from button 
 btnRock.addEventListener('click', () => 
     handleClick ('ROCK'))
-    //return (btnRock.textContent);
+    
 
 btnPaper.addEventListener('click', ()=> 
     handleClick('PAPER'))
-    //return (btnPaper.textContent);
+    
 btnScissors.addEventListener('click', () => 
     handleClick ('SCISSORS'))
-    //return (btnScissors.textContent)
-
-
+    
 //get playerChoice from results of eventListener
- //function handleClick (){
-    //if (button.id === btnRock) {
-        //return playerChoice = 'ROCK';
-   // }
-    //else if (button.id = btnPaper) {
-        //return playerChoice = 'PAPER'
-   //}
-    //else if (button.id = btnScissors) {
-        //return playerChoice = 'SCISSORS'
-   // }}
+ function handleClick (){
+    if (button.id === btnRock) {
+        return playerChoice = 'ROCK';
+    }
+    else if (button.id = btnPaper) {
+        return playerChoice = 'PAPER'
+   }
+    else if (button.id = btnScissors) {
+        return playerChoice = 'SCISSORS'
+    }}
     
 
 //get computer choice from random selection
