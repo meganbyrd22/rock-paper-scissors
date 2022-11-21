@@ -8,13 +8,13 @@ let computerScore=0
 
 // get playerChoice from button then playRound
 btnRock.addEventListener('click', () => {
-    return (button.id);
+    return (btnRock.textContent);
 })
 btnPaper.addEventListener('click', ()=> {
-    return (button.id);
+    return (btnPaper.textContent);
 })
 btnScissors.addEventListener('click', () => {
-    return (button.id)
+    return (btnScissors.textContent)
 })
 
 //get playerChoice from results of eventListener
