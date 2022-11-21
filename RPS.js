@@ -56,9 +56,9 @@ function showWinner()
     else if (roundWinner ==='computer'){
          return winnerMessage ='You lose!';
     }
-    else {return winnerMessage ='It\'s a tie!';
+    else if (roundWinner === 'tie') {return winnerMessage ='It\'s a tie!';
     }
-
+    updateScore(showWinner);
 }
 
 //update the score + display current score
