@@ -60,13 +60,13 @@ function playRound(computerChoice, playerChoice){
 //print a winner message 
 function showWinner()
     {if (roundWinner ==='player'){
-       return getElementById(winnerMessage).textContent= "You win!";
+       return winnerMessage = "You win!";
     }
     else if (roundWinner ==='computer'){
-        return getElementById(winnerMessage).textContent="You lose!";
+        return winnerMessage ="You lose!";
     }
 
-    else {return getElementById(winnerMessage).textContent="It's a tie!";
+    else {return winnerMessage.textContent="It's a tie!";
 }
 }
 //update the score + display current score
