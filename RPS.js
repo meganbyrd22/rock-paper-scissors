@@ -13,15 +13,17 @@ btnRock.addEventListener('click', () => {
 
 
 btnPaper.addEventListener('click', ()=> {
-    handleClick('PAPER')})
+    playerChoice = 'PAPER';
+    playRound(playerChoice, computerChoice))
     
 btnScissors.addEventListener('click', () => {
-   handleClick('SCISSORS')})
+   playerChoice = 'SCISSORS';
+   playRound (playerChoice, computerChoice))
     
 //get playerChoice from results of eventListener
- function handleClick(){
-    playerChoice = (e);
-    playRound(playerChoice, computerChoice)}
+ //function handleClick(){
+    //playerChoice = (e);
+   // playRound(playerChoice, computerChoice)}
     //(playerScore < 5 && computerScore < 5)
     //return playerChoice;
     //else return 'Game over!' };
