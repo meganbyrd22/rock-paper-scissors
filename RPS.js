@@ -19,7 +19,7 @@ btnScissors.addEventListener('click', () =>
 //get playerChoice from results of eventListener
  function handleClick(){
     if (playerScore < 5 || computerScore < 5)
-    return document.getElementById(button);
+    return;
     else return 'Game over!' };
     
 
