@@ -8,26 +8,18 @@ let computerScore=0
 
 // get playerChoice from button 
 btnRock.addEventListener('click', () => 
-    handleClick ('ROCK'))
+    handleClick('ROCK'))
     
 
 btnPaper.addEventListener('click', ()=> 
     handleClick('PAPER'))
     
 btnScissors.addEventListener('click', () => 
-    handleClick ('SCISSORS'))
+    handleClick('SCISSORS'))
     
 //get playerChoice from results of eventListener
- function handleClick (){
-    if (button.id === btnRock) {
-        return playerChoice = 'ROCK';
-    }
-    else if (button.id = btnPaper) {
-        return playerChoice = 'PAPER'
-   }
-    else if (button.id = btnScissors) {
-        return playerChoice = 'SCISSORS'
-    }}
+ function getPlayerChoice (handleClick){
+    return handleClick.textContent }
     
 
 //get computer choice from random selection
