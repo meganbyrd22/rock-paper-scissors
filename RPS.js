@@ -7,27 +7,29 @@ let computerScore=0
 
 
 // get playerChoice from button then playRound
-btnRock.addEventListener('click', () => {
-    return (btnRock.textContent);
-})
-btnPaper.addEventListener('click', ()=> {
-    return (btnPaper.textContent);
-})
-btnScissors.addEventListener('click', () => {
-    return (btnScissors.textContent)
-})
+btnRock.addEventListener('click', () => 
+    handleClick ('ROCK'))
+    //return (btnRock.textContent);
+
+btnPaper.addEventListener('click', ()=> 
+    handleClick('PAPER'))
+    //return (btnPaper.textContent);
+btnScissors.addEventListener('click', () => 
+    handleClick ('SCISSORS'))
+    //return (btnScissors.textContent)
+
 
 //get playerChoice from results of eventListener
- function getPlayerChoice() {
-    if (button.id === btnRock) {
-        return playerChoice = 'ROCK';
-    }
-    else if (button.id = btnPaper) {
-        return playerChoice = 'PAPER'
-    }
-    else if (button.id = btnScissors) {
-        return playerChoice = 'SCISSORS'
-    }}
+ //function handleClick (){
+    //if (button.id === btnRock) {
+        //return playerChoice = 'ROCK';
+   // }
+    //else if (button.id = btnPaper) {
+        //return playerChoice = 'PAPER'
+   //}
+    //else if (button.id = btnScissors) {
+        //return playerChoice = 'SCISSORS'
+   // }}
     
 
 //get computer choice from random selection
