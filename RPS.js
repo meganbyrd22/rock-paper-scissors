@@ -48,19 +48,22 @@ function getComputerChoice() {
 //play one round    
 function playRound(computerChoice, playerChoice){
     for (let i = 0; i < 5; i++)
-    {if (playerChoice === computerChoice) {return roundWinner ='tie'}
+    {if (playerChoice === computerChoice) {roundWinner ='tie'
+    winnerMessage.textContent = "It's a tie!"}
     
     else if 
     ((playerChoice==='ROCK' && computerChoice ==='SCISSORS') || 
     (playerChoice ==='PAPER' && computerChoice ==='ROCK') || 
     (playerChoice ==='SCISSORS' && computerChoice ==='PAPER'))  
-    {return roundWinner ='player'}
+    {roundWinner ='player'
+    playerScore++ 
+    winnerMessage.textContent = "You won!"}
     
-    else {return roundWinner ='computer'};
+    else {roundWinner ='computer'
+    computerScore++
+    winnerMessage.textContent = "You lose!"};
     }
 // Return text that says player chose x and computer chose y
-
-
     showWinner(roundWinner);
 }
 
