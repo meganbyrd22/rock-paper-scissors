@@ -5,6 +5,15 @@ const computerChoice= (getComputerChoice);
 let playerScore=0
 let computerScore=0
 
+//UI variables 
+const buttons = document.getElementsByClassName("buttons")
+const btnRock = document.getElementById("btnRock")
+const btnPaper = document.getElementById("btnPaper")
+const btnScissors = document.getElementById("btnScissors")
+const scoreboard = document.getElementsByClassName ("scoreboard")
+const playerScoreText = document.getElementById("playerScoreText")
+const computerScoreText = document.getElementById(computerScoreText)
+const scoreMessage = document.getElementsByClassName("scoreMessage")
 
 // get playerChoice from button and initialize playRound 
 btnRock.addEventListener('click', () => {
