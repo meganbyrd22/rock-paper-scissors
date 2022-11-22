@@ -14,9 +14,9 @@ const scoreboard = document.getElementsByClassName ("scoreboard")
 const playerScoreText = document.getElementById("playerScoreText")
 const computerScoreText = document.getElementById("computerScoreText")
 const winnerMessage = document.getElementById("winnerMessage")
-const roundChoices = document.getElementsByClassName("roundChoices")
-const playerRoundChoice = document.getElementById("playerRoundChoice")
-const computerRoundChoice = document.getElementById(computerRoundChoice)
+//const roundChoices = document.getElementsByClassName("roundChoices")
+//const playerRoundChoice = document.getElementById("playerRoundChoice")
+//const computerRoundChoice = document.getElementById(computerRoundChoice)
 
 // get playerChoice from button and initialize playRound 
 btnRock.addEventListener('click', () => {
@@ -60,7 +60,7 @@ function playRound(computerChoice, playerChoice){
     computerScore++
     }
     }
-    showWinner(roundWinner, playerChoice, comupterChoice);
+    showWinner(roundWinner, playerChoice, computerChoice);
 }
 
 //print a winner message 
