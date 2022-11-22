@@ -27,8 +27,7 @@ btnPaper.addEventListener('click', ()=> {
     playerChoice.textContent = 'PAPER';
     playRound(playerChoice, computerChoice)})
     
-btnScissors.addEventListener('click', () => {
-   playerChoice.textContent = 'SCISSORS';
+btnScissors.addEventListener('click', () => {  playerChoice.textContent = 'SCISSORS';
    playRound (playerChoice, computerChoice)})
  
 //get computer choice from random selection
@@ -48,23 +47,20 @@ function getComputerChoice() {
 //play one round    
 function playRound(computerChoice, playerChoice){
     for (let i = 0; i < 5; i++)
-    {if (playerChoice === computerChoice) {roundWinner ='tie'
-    winnerMessage.textContent = "It's a tie!"}
+    {if (playerChoice === computerChoice) {roundWinner ='tie'}
     
     else if 
     ((playerChoice==='ROCK' && computerChoice ==='SCISSORS') || 
     (playerChoice ==='PAPER' && computerChoice ==='ROCK') || 
     (playerChoice ==='SCISSORS' && computerChoice ==='PAPER'))  
     {roundWinner ='player'
-    playerScore++ 
-    winnerMessage.textContent = "You won!"}
+    playerScore++}
     
     else {roundWinner ='computer'
     computerScore++
-    winnerMessage.textContent = "You lose!"};
     }
-// Return text that says player chose x and computer chose y
-    showWinner(roundWinner);
+    }
+    showWinner(roundWinner, playerChoice, comupterChoice);
 }
 
 //print a winner message 
@@ -77,7 +73,7 @@ function showWinner()
     }
     else if (roundWinner === 'tie') {return winnerMessage.textContent ='It\'s a tie!';
     }
-    updateScore(showWinner);
+    //updateScore(showWinner);
 }
 
 //update the score + display current score IN HTML!!
