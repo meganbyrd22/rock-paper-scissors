@@ -14,18 +14,21 @@ const scoreboard = document.getElementsByClassName ("scoreboard")
 const playerScoreText = document.getElementById("playerScoreText")
 const computerScoreText = document.getElementById("computerScoreText")
 const winnerMessage = document.getElementById("winnerMessage")
+const choices = document.getElementsByClassName("choices")
+const playerChoice = document.getElementById("playerChoice")
+const computerChoice = document.getElementById(computerChoice)
 
 // get playerChoice from button and initialize playRound 
 btnRock.addEventListener('click', () => {
-     playerChoice ='ROCK';
+     playerChoice.textContent ='ROCK';
      playRound(playerChoice, computerChoice)})
 
 btnPaper.addEventListener('click', ()=> {
-    playerChoice = 'PAPER';
+    playerChoice.textContent = 'PAPER';
     playRound(playerChoice, computerChoice)})
     
 btnScissors.addEventListener('click', () => {
-   playerChoice = 'SCISSORS';
+   playerChoice.textContent = 'SCISSORS';
    playRound (playerChoice, computerChoice)})
  
 //get computer choice from random selection
