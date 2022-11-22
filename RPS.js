@@ -39,6 +39,7 @@ function getComputerChoice() {
         case 2:
          return 'SCISSORS'
     }
+    playRound();
 }
 
 //play one round    
