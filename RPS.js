@@ -53,11 +53,11 @@ function playRound(computerChoice, playerChoice){
     ((playerChoice==='ROCK' && computerChoice ==='SCISSORS') || 
     (playerChoice ==='PAPER' && computerChoice ==='ROCK') || 
     (playerChoice ==='SCISSORS' && computerChoice ==='PAPER'))  
-    {roundWinner ='player'
-    playerScore++}
+    {playerScore++ ;
+    roundWinner ='player'}
     
-    else {roundWinner ='computer'
-    computerScore++
+    else {computerScore++ ;
+        roundWinner ='computer'
     }
     }
     showWinner(roundWinner, playerChoice, computerChoice);
