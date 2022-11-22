@@ -73,7 +73,10 @@ function showWinner()
     }
     else if (roundWinner === 'tie') {return winnerMessage.textContent ='It\'s a tie!';
     }
-    updateScore(showWinner);
+    //updateScore(showWinner);
+
+    playerScoreText.textContent = 'Player:' ${playerScore}
+    computerScoreText.textContent = 'Computer:' ${computerScore};
 }
 
 //update the score + display current score IN HTML!!
