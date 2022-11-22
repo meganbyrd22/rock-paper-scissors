@@ -20,14 +20,14 @@ const winnerMessage = document.getElementById("winnerMessage")
 
 // get playerChoice from button and initialize playRound 
 btnRock.addEventListener('click', () => {
-     playerChoice.textContent ='ROCK';
+     playerChoice ='ROCK';
      playRound(playerChoice, computerChoice)})
 
 btnPaper.addEventListener('click', ()=> {
-    playerChoice.textContent = 'PAPER';
+    playerChoice = 'PAPER';
     playRound(playerChoice, computerChoice)})
     
-btnScissors.addEventListener('click', () => {  playerChoice.textContent = 'SCISSORS';
+btnScissors.addEventListener('click', () => {  playerChoice = 'SCISSORS';
    playRound (playerChoice, computerChoice)})
  
 //get computer choice from random selection
@@ -41,7 +41,7 @@ function getComputerChoice() {
         case 2:
          return 'SCISSORS'
     }
-    playRound();
+    playRound(playerChoice, computerChoice);
 }
 
 //play one round    
