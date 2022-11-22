@@ -13,7 +13,7 @@ const btnScissors = document.getElementById("btnScissors")
 const scoreboard = document.getElementsByClassName ("scoreboard")
 const playerScoreText = document.getElementById("playerScoreText")
 const computerScoreText = document.getElementById("computerScoreText")
-const winnerMessage = document.getElementsByClassName("winnerMessage")
+const winnerMessage = document.getElementById("winnerMessage")
 
 // get playerChoice from button and initialize playRound 
 btnRock.addEventListener('click', () => {
