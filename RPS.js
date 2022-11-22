@@ -46,7 +46,7 @@ function getComputerChoice() {
 
 //play one round    
 function playRound(computerChoice, playerChoice){
-    for (let i = 0; i < 5; i++)
+    //for (let i = 0; i < 5; i++)
     {if (playerChoice === computerChoice) {roundWinner ='tie'}
     
     else if 
