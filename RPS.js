@@ -14,9 +14,6 @@ const scoreboard = document.getElementsByClassName ("scoreboard")
 const playerScoreText = document.getElementById("playerScoreText")
 const computerScoreText = document.getElementById("computerScoreText")
 const winnerMessage = document.getElementById("winnerMessage")
-//const roundChoices = document.getElementsByClassName("roundChoices")
-//const playerRoundChoice = document.getElementById("playerRoundChoice")
-//const computerRoundChoice = document.getElementById(computerRoundChoice)
 
 // get playerChoice from button and initialize playRound 
 btnRock.addEventListener('click', () => {
@@ -46,7 +43,7 @@ function getComputerChoice() {
 
 //play one round    
 function playRound(computerChoice, playerChoice){
-    //for (let i = 0; i < 5; i++)
+    for (let i = 0; i < 5; i++)
     {if (playerChoice === computerChoice) {roundWinner ='tie'}
     
     else if 
@@ -76,7 +73,8 @@ function showWinner()
     //updateScore(showWinner);
 
     playerScoreText.textContent = `Player: ${playerScore}`
-    computerScoreText.textContent = `Computer: ${computerScore}`;
+    computerScoreText.textContent = `Computer: ${computerScore}`
+    return;
 }
 
 //update the score + display current score IN HTML!!
