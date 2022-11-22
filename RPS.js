@@ -14,7 +14,7 @@ const scoreboard = document.getElementsByClassName ("scoreboard")
 const playerScoreText = document.getElementById("playerScoreText")
 const computerScoreText = document.getElementById("computerScoreText")
 const winnerMessage = document.getElementById("winnerMessage")
-const choices = document.getElementsByClassName("choices")
+const roundChoices = document.getElementsByClassName("roundChoices")
 const playerChoice = document.getElementById("playerChoice")
 const computerChoice = document.getElementById(computerChoice)
 
