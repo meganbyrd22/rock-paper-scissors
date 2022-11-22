@@ -55,6 +55,9 @@ function playRound(computerChoice, playerChoice){
     
     else {return roundWinner ='computer'};
     }
+// Return text that says player chose x and computer chose y
+
+
     showWinner(roundWinner);
 }
 
@@ -71,7 +74,7 @@ function showWinner()
     updateScore(showWinner);
 }
 
-//update the score + display current score
+//update the score + display current score IN HTML!!
 function updateScore(){ 
     {if  (winnerMessage ==='You win!'){ (playerScore)++}
     else if (winnerMessage ==='You lose!'){(computerScore)++}
