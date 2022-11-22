@@ -75,8 +75,8 @@ function showWinner()
     }
     //updateScore(showWinner);
 
-    playerScoreText.textContent = 'Player:' ${playerScore}
-    computerScoreText.textContent = 'Computer:' ${computerScore};
+    playerScoreText.textContent = `Player: ${playerScore}`
+    computerScoreText.textContent = `Computer: ${computerScore}`;
 }
 
 //update the score + display current score IN HTML!!
