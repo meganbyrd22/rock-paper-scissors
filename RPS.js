@@ -5,7 +5,6 @@ const computerChoice= getComputerChoice();
 let playerScore = 0
 let computerScore = 0
 
-
 //UI variables 
 const buttons = document.getElementsByClassName("buttons")
 const btnRock = document.getElementById("btnRock")
@@ -44,7 +43,8 @@ function getComputerChoice() {
 
 //play one round    
 function playRound(computerChoice, playerChoice){
-    if (playerChoice === computerChoice) {roundWinner ='tie'}
+    if (playerChoice === computerChoice) {roundWinner ='tie'
+    return winnerMessage.textContent =`It's a tie!`}
     
     else if 
     ((playerChoice==='ROCK' && computerChoice ==='SCISSORS') || 
@@ -54,31 +54,29 @@ function playRound(computerChoice, playerChoice){
     roundWinner ='player';
     playerScoreText.textContent = `Player: ${playerScore}`;
     computerScoreText.textContent =  `Computer:${computerScore}`
+    return winnerMessage.textContent = 'You win!'
     }
     
     else {++computerScore ;
         roundWinner ='computer';
         playerScoreText.textContent = `Player: ${playerScore}`;
         computerScoreText.textContent =  `Computer:${computerScore}`
+        return winnerMessage.textContent ='You lose!'
     }
     }
-    showWinner(roundWinner );
+    //showWinner(roundWinner);
 
 //print a winner message 
-function showWinner()
-    {if (roundWinner ==='player'){
-        return winnerMessage.textContent = 'You win!';
-    }
-    else if (roundWinner ==='computer'){
-         return winnerMessage.textContent ='You lose!';
-    }
-    else if (roundWinner === 'tie') {return winnerMessage.textContent ='It\'s a tie!';
-    }
-    //updateScore(showWinner);
-   // playerScoreText.textContent = `Player: ${playerScore}`
-    //computerScoreText.textContent = `Computer: ${computerScore}`
-    //return;
-}
+//function showWinner()
+    //{if (roundWinner ==='player'){
+        //return winnerMessage.textContent = 'You win!';
+    //}
+    //else if (roundWinner ==='computer'){
+         //return winnerMessage.textContent ='You lose!';
+    //}
+   // else if (roundWinner === 'tie') {return winnerMessage.textContent ='It\'s a tie!';
+    //}
+
 
 //update the score + display current score IN HTML!!
 //function updateScore(){ 
