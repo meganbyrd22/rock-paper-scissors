@@ -51,13 +51,15 @@ function playRound(computerChoice, playerChoice){
     (playerChoice ==='PAPER' && computerChoice ==='ROCK') || 
     (playerChoice ==='SCISSORS' && computerChoice ==='PAPER'))  
     {playerScore++ ;
-    roundWinner ='player'
+    roundWinner ='player';
     playerScoreText.textContent = `Player: ${playerScore}`;
     computerScoreText.textContent =  `Computer:${computerScore}`
     }
     
     else {computerScore++ ;
-        roundWinner ='computer'
+        roundWinner ='computer';
+        playerScoreText.textContent = `Player: ${playerScore}`;
+        computerScoreText.textContent =  `Computer:${computerScore}`
     }
     }
     showWinner(roundWinner, playerChoice, computerChoice);
