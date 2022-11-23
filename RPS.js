@@ -66,10 +66,14 @@ function playRound(computerChoice, playerChoice){
     }
     }
 
-function gameOver ()
-    if (playerScore === 5 || computerScore ===5) {
-        return gameOverMessage = "Game over!"
+function gameOver(){
+    if(playerScore === 5)
+    {return gameOverMessage.textContent = "Game over, you won!"}
+    else if (computerScore === 5){
+    return gameOverMessage.textContent = "Game over, you lost."
     }
+}
+
     //showWinner(roundWinner);
 
 //print a winner message 
