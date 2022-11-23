@@ -46,7 +46,7 @@ function getComputerChoice() {
 //play one round    
 function playRound(computerChoice, playerChoice){
     if (playerChoice === computerChoice) {roundWinner ='tie'
-    return winnerMessage.textContent =`It's a tie!`}
+     winnerMessage.textContent =`It's a tie!`}
     
     else if 
     ((playerChoice==='ROCK' && computerChoice ==='SCISSORS') || 
@@ -56,24 +56,25 @@ function playRound(computerChoice, playerChoice){
     roundWinner ='player';
     playerScoreText.textContent = `Player: ${playerScore}`;
     computerScoreText.textContent =  `Computer:${computerScore}`
-    return winnerMessage.textContent = 'You win!'
+     winnerMessage.textContent = 'You win!'
     }
     
     else {++computerScore ;
         roundWinner ='computer';
         playerScoreText.textContent = `Player: ${playerScore}`;
         computerScoreText.textContent =  `Computer:${computerScore}`
-        return (winnerMessage.textContent ='You lose!')
+         (winnerMessage.textContent ='You lose!')
     }
+    gameOver(playerScore, computerScore)
 }
 
 function gameOver(){
-    if(playerScore = 5)
-    {return gameOverMessage.textContent = "Game over, you won!"}
-    else if (computerScore = 5){
-    return gameOverMessage.textContent = "Game over, you lost."
+    if(playerScore === 5)
+    {return (gameOverMessage.textContent = 'Game over, you won!')}
+    else if (computerScore === 5){
+     return (gameOverMessage.textContent = 'Game over, you lost.')}
     }
-}
+
 
 
 
