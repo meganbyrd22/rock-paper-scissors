@@ -51,7 +51,10 @@ function playRound(computerChoice, playerChoice){
     (playerChoice ==='PAPER' && computerChoice ==='ROCK') || 
     (playerChoice ==='SCISSORS' && computerChoice ==='PAPER'))  
     {playerScore++ ;
-    roundWinner ='player'}
+    roundWinner ='player'
+    playerScoreText = `Player: ${playerScore}`;
+    computerScoreText =  `Computer:${computerScore}`
+    }
     
     else {computerScore++ ;
         roundWinner ='computer'
@@ -71,10 +74,9 @@ function showWinner()
     else if (roundWinner === 'tie') {return winnerMessage.textContent ='It\'s a tie!';
     }
     //updateScore(showWinner);
-
-    playerScoreText.textContent = `Player: ${playerScore}`
-    computerScoreText.textContent = `Computer: ${computerScore}`
-    return;
+   // playerScoreText.textContent = `Player: ${playerScore}`
+    //computerScoreText.textContent = `Computer: ${computerScore}`
+    //return;
 }
 
 //update the score + display current score IN HTML!!
