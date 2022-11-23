@@ -11,10 +11,11 @@ const btnRock = document.getElementById("btnRock")
 const btnPaper = document.getElementById("btnPaper")
 const btnScissors = document.getElementById("btnScissors")
 const scoreboard = document.getElementsByClassName ("scoreboard")
-const playerScoreText = document.getElementById("playerScoreText")
-const computerScoreText = document.getElementById("computerScoreText")
+const playerScoreText = document.getElementById("playerScore")
+const computerScoreText = document.getElementById("computerScore")
 const winnerMessage = document.getElementById("winnerMessage")
 const gameOverMessage = document.getElementById("gameOverMessage")
+
 
 // get playerChoice from button and initialize playRound 
 btnRock.addEventListener('click', () => {
@@ -62,17 +63,19 @@ function playRound(computerChoice, playerChoice){
         roundWinner ='computer';
         playerScoreText.textContent = `Player: ${playerScore}`;
         computerScoreText.textContent =  `Computer:${computerScore}`
-        return winnerMessage.textContent ='You lose!'
+        return (winnerMessage.textContent ='You lose!')
     }
-    }
+}
 
 function gameOver(){
-    if(playerScore === 5)
+    if(playerScore = 5)
     {return gameOverMessage.textContent = "Game over, you won!"}
-    else if (computerScore === 5){
+    else if (computerScore = 5){
     return gameOverMessage.textContent = "Game over, you lost."
     }
 }
+
+
 
     //showWinner(roundWinner);
 
