@@ -59,10 +59,10 @@ function playRound(computerChoice, playerChoice){
      winnerMessage.textContent = 'You win!'
     }
     
-    else {++computerScore ;
+    else {++computerScore;
         roundWinner ='computer';
-        playerScoreText.textContent = `Player: ${playerScore}`;
-        computerScoreText.textContent =  `Computer:${computerScore}`
+        playerScore.textContent = `Player: ${playerScore}`;
+        computerScore.textContent =  `Computer: ${computerScore}`
          (winnerMessage.textContent ='You lose!')
     }
     gameOver(playerScore, computerScore)
@@ -75,28 +75,4 @@ function gameOver(){
      return (gameOverMessage.textContent = 'Game over, you lost.')}
     }
 
-
-
-
-    //showWinner(roundWinner);
-
-//print a winner message 
-//function showWinner()
-    //{if (roundWinner ==='player'){
-        //return winnerMessage.textContent = 'You win!';
-    //}
-    //else if (roundWinner ==='computer'){
-         //return winnerMessage.textContent ='You lose!';
-    //}
-   // else if (roundWinner === 'tie') {return winnerMessage.textContent ='It\'s a tie!';
-    //}
-
-
-//update the score + display current score IN HTML!!
-//function updateScore(){ 
-   // {if  (winnerMessage ==='You win!'){ (playerScore)++}
-   // else if (winnerMessage ==='You lose!'){(computerScore)++}
-   // }
-    //return playerScoreText.textContent = `Player: ${playerScore}`,computerScoreText.textContent= `Computer:${computerScore}`;
-//}
 
