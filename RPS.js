@@ -4,6 +4,7 @@ const computerChoice= getComputerChoice();
 
 let playerScore = 0
 let computerScore = 0
+let roundWinner = ''
 
 //UI variables 
 const buttons = document.getElementsByClassName("buttons")
@@ -52,7 +53,7 @@ function playRound(computerChoice, playerChoice){
     ((playerChoice==='ROCK' && computerChoice ==='SCISSORS') || 
     (playerChoice ==='PAPER' && computerChoice ==='ROCK') || 
     (playerChoice ==='SCISSORS' && computerChoice ==='PAPER'))  
-    {++playerScore;
+    {playerScore++;
     roundWinner ='player';
     playerScoreText.textContent = `Player: ${playerScore}`;
     computerScoreText.textContent =  `Computer:${computerScore}`
@@ -62,7 +63,7 @@ function playRound(computerChoice, playerChoice){
     else if 
     ((playerChoice === 'ROCK' && computerChoice === 'PAPER')||
     (playerChoice === 'PAPER' && computerChoice === 'SCISSORS')||
-    (playerChoice === 'SCISSORS' && computerChoice === 'ROCK')) {++computerScore;
+    (playerChoice === 'SCISSORS' && computerChoice === 'ROCK')) {computerScore++;
         roundWinner ='computer';
         playerScore.textContent = `Player: ${playerScore}`;
         computerScore.textContent =  `Computer: ${computerScore}`
