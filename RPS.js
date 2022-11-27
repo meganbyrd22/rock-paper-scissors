@@ -59,7 +59,10 @@ function playRound(computerChoice, playerChoice){
      winnerMessage.textContent = 'You win!'
     }
     
-    else {++computerScore;
+    else if 
+    ((playerChoice === 'ROCK' && computerChoice === 'PAPER')||
+    (playerChoice === 'PAPER' && computerChoice === 'SCISSORS')||
+    (playerChoice === 'SCISSORS' && computerChoice === 'ROCK')) {++computerScore;
         roundWinner ='computer';
         playerScore.textContent = `Player: ${playerScore}`;
         computerScore.textContent =  `Computer: ${computerScore}`
