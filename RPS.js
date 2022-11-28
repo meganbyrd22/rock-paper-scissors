@@ -1,5 +1,5 @@
 const choices=['Rock', 'Paper', 'Scissors']
-const getComputerChoice= getComputerChoice();
+//const getComputerChoice= getComputerChoice();
 //const playerChoice= (getPlayerChoice);
 
 let playerScore = 0
@@ -21,17 +21,17 @@ const gameOverMessage = document.getElementById("gameOverMessage")
 // get playerChoice from button and initialize playRound 
 btnRock.addEventListener('click', () => {
      playerChoice ='ROCK';
-     playRound(playerChoice, getComputerChoice)})
+     playRound(playerChoice, makeComputerChoice)})
 
 btnPaper.addEventListener('click', ()=> {
     playerChoice = 'PAPER';
-    playRound(playerChoice, getComputerChoice)})
+    playRound(playerChoice, makeComputerChoice)})
     
 btnScissors.addEventListener('click', () => {  playerChoice = 'SCISSORS';
-   playRound (playerChoice, getComputerChoice)})
+   playRound (playerChoice, makeComputerChoice)})
  
 //get computer choice from random selection
-function getComputerChoice() {
+function makeComputerChoice() {
     let randomNumber = Math.floor(Math.random() * 3)
     switch (randomNumber) {
         case 0:
@@ -46,13 +46,13 @@ function getComputerChoice() {
 
 //play one round    
 function playRound(getComputerChoice, playerChoice){
-    if (playerChoice === getComputerChoice) {roundWinner ='tie'
+    if (playerChoice === makeComputerChoice) {roundWinner ='tie'
      winnerMessage.textContent =`It's a tie!`}
     
     else if 
-    ((playerChoice==='ROCK' && getComputerChoice ==='SCISSORS') || 
-    (playerChoice ==='PAPER' && getComputerChoice ==='ROCK') || 
-    (playerChoice ==='SCISSORS' && getComputerChoice ==='PAPER'))  
+    ((playerChoice==='ROCK' && makeComputerChoice ==='SCISSORS') || 
+    (playerChoice ==='PAPER' && makeComputerChoice ==='ROCK') || 
+    (playerChoice ==='SCISSORS' && makeComputerChoice ==='PAPER'))  
     {playerScore++;
     roundWinner ='player';
     playerScoreText.textContent = `Player: ${playerScore}`;
@@ -61,9 +61,9 @@ function playRound(getComputerChoice, playerChoice){
     }
     
     else if 
-    ((playerChoice === 'ROCK' && getComputerChoice === 'PAPER')||
-    (playerChoice === 'PAPER' && getComputerChoice === 'SCISSORS')||
-    (playerChoice === 'SCISSORS' && getComputerChoice === 'ROCK')) {computerScore++;
+    ((playerChoice === 'ROCK' && makeComputerChoice === 'PAPER')||
+    (playerChoice === 'PAPER' && makeComputerChoice === 'SCISSORS')||
+    (playerChoice === 'SCISSORS' && makeComputerChoice === 'ROCK')) {computerScore++;
         roundWinner ='computer';
         playerScore.textContent = `Player: ${playerScore}`;
         computerScore.textContent =  `Computer: ${computerScore}`
