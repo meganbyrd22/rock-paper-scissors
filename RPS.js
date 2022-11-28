@@ -21,14 +21,14 @@ const gameOverMessage = document.getElementById("gameOverMessage")
 // get playerChoice from button and initialize playRound 
 btnRock.addEventListener('click', () => {
      playerChoice ='ROCK';
-     playRound(playerChoice, computerChoice)})
+     playRound(playerChoice, getComputerChoice)})
 
 btnPaper.addEventListener('click', ()=> {
     playerChoice = 'PAPER';
-    playRound(playerChoice, computerChoice)})
+    playRound(playerChoice, getComputerChoice)})
     
 btnScissors.addEventListener('click', () => {  playerChoice = 'SCISSORS';
-   playRound (playerChoice, computerChoice)})
+   playRound (playerChoice, getComputerChoice)})
  
 //get computer choice from random selection
 function getComputerChoice() {
@@ -41,7 +41,7 @@ function getComputerChoice() {
         case 2:
          return 'SCISSORS'
     }
-    playRound(playerChoice, computerChoice);
+    playRound(playerChoice, getComputerChoice);
 }
 
 //play one round    
@@ -50,9 +50,9 @@ function playRound(computerChoice, playerChoice){
      winnerMessage.textContent =`It's a tie!`}
     
     else if 
-    ((playerChoice==='ROCK' && computerChoice ==='SCISSORS') || 
-    (playerChoice ==='PAPER' && computerChoice ==='ROCK') || 
-    (playerChoice ==='SCISSORS' && computerChoice ==='PAPER'))  
+    ((playerChoice==='ROCK' && getComputerChoice ==='SCISSORS') || 
+    (playerChoice ==='PAPER' && getComputerChoice ==='ROCK') || 
+    (playerChoice ==='SCISSORS' && getComputerChoice ==='PAPER'))  
     {playerScore++;
     roundWinner ='player';
     playerScoreText.textContent = `Player: ${playerScore}`;
@@ -61,9 +61,9 @@ function playRound(computerChoice, playerChoice){
     }
     
     else if 
-    ((playerChoice === 'ROCK' && computerChoice === 'PAPER')||
-    (playerChoice === 'PAPER' && computerChoice === 'SCISSORS')||
-    (playerChoice === 'SCISSORS' && computerChoice === 'ROCK')) {computerScore++;
+    ((playerChoice === 'ROCK' && getComputerChoice === 'PAPER')||
+    (playerChoice === 'PAPER' && getComputerChoice === 'SCISSORS')||
+    (playerChoice === 'SCISSORS' && getComputerChoice === 'ROCK')) {computerScore++;
         roundWinner ='computer';
         playerScore.textContent = `Player: ${playerScore}`;
         computerScore.textContent =  `Computer: ${computerScore}`
