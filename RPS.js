@@ -66,8 +66,8 @@ function playRound(playerChoice, makeComputerChoice){
     (playerChoice === 'PAPER' && makeComputerChoice === 'SCISSORS')||
     (playerChoice === 'SCISSORS' && makeComputerChoice === 'ROCK')) {computerScore++;
         roundWinner ='computer';
-        playerScore.textContent = `Player: ${playerScore}`;
-        computerScore.textContent =  `Computer: ${computerScore}`;
+        playerScoreText.textContent = `Player: ${playerScore}`;
+        computerScoreText.textContent =  `Computer: ${computerScore}`;
          winnerMessage.textContent ='You lose!'
     }
     gameOver(playerScore, computerScore)
