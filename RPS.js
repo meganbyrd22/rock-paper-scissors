@@ -1,5 +1,5 @@
 const choices=['Rock', 'Paper', 'Scissors']
-const computerChoice= getComputerChoice();
+const getComputerChoice= getComputerChoice();
 //const playerChoice= (getPlayerChoice);
 
 let playerScore = 0
