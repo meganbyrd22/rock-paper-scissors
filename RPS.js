@@ -45,7 +45,7 @@ function makeComputerChoice() {
 }
 
 //play one round    
-function playRound(getComputerChoice, playerChoice){
+function playRound(makeComputerChoice, playerChoice){
     if (playerChoice === makeComputerChoice) {roundWinner ='tie'
      winnerMessage.textContent =`It's a tie!`}
     
