@@ -17,19 +17,6 @@ const computerScoreText = document.getElementById("computerScore")
 const winnerMessage = document.getElementById("winnerMessage")
 const gameOverMessage = document.getElementById("gameOverMessage")
 
-
-// get playerChoice from button and initialize playRound 
-btnRock.addEventListener('click', () => {
-     playerChoice ='ROCK';
-     playRound(playerChoice, makeComputerChoice)})
-
-btnPaper.addEventListener('click', ()=> {
-    playerChoice = 'PAPER';
-    playRound(playerChoice, makeComputerChoice)})
-    
-btnScissors.addEventListener('click', () => {  playerChoice = 'SCISSORS';
-   playRound (playerChoice, makeComputerChoice)})
- 
 //get computer choice from random selection
 function makeComputerChoice() {
     let randomNumber = Math.floor(Math.random() * 3)
@@ -43,6 +30,20 @@ function makeComputerChoice() {
     }
     playRound(playerChoice, makeComputerChoice);
 }
+
+// get playerChoice from button and initialize playRound 
+btnRock.addEventListener('click', () => {
+     playerChoice ='ROCK';
+     playRound(playerChoice, makeComputerChoice())})
+
+btnPaper.addEventListener('click', ()=> {
+    playerChoice = 'PAPER';
+    playRound(playerChoice, makeComputerChoice())})
+    
+btnScissors.addEventListener('click', () => {  playerChoice = 'SCISSORS';
+   playRound (playerChoice, makeComputerChoice())})
+ 
+
 
 //play one round    
 function playRound(playerChoice, makeComputerChoice){
