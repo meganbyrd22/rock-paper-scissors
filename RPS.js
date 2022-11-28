@@ -68,7 +68,7 @@ function playRound(playerChoice, makeComputerChoice){
         roundWinner ='computer';
         playerScore.textContent = `Player: ${playerScore}`;
         computerScore.textContent =  `Computer: ${computerScore}`;
-         (winnerMessage.textContent ='You lose!')
+         winnerMessage.textContent ='You lose!'
     }
     gameOver(playerScore, computerScore)
 }
