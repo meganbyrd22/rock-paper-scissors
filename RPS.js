@@ -41,11 +41,11 @@ function makeComputerChoice() {
         case 2:
          return 'SCISSORS'
     }
-    playRound(playerChoice, getComputerChoice);
+    playRound(playerChoice, makeComputerChoice);
 }
 
 //play one round    
-function playRound(makeComputerChoice, playerChoice){
+function playRound(playerChoice, makeComputerChoice){
     if (playerChoice === makeComputerChoice) {roundWinner ='tie'
      winnerMessage.textContent =`It's a tie!`}
     
