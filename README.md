@@ -1,2 +1,3 @@
 # rock-paper-scissors
-Javascript assignment 1 to create an interactive rock paper scissors game!
+Project completed as part of The Odin Project curriculum. 
+  -First javascript project, completed in December 2022 
